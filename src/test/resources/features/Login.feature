@@ -2,7 +2,7 @@ Feature: Login y Logout
 
   Background: To log in you need to be registered
     Given Navigate to Demoblaze web
-    And Click on the button Sign up
+    Given Click on the button Sign up
     And Write Username
     And Write Password
     And Click on the button Sign Up

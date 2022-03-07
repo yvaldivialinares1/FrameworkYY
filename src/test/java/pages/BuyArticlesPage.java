@@ -1,6 +1,11 @@
 package pages;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import org.openqa.selenium.chrome.ChromeDriver;
 import pageObjects.BuyArticlesPageObject;
+
+import java.util.concurrent.TimeUnit;
 
 public class BuyArticlesPage extends BasePage {
     BuyArticlesPageObject buyArticlesPageObject = new BuyArticlesPageObject();
@@ -10,11 +15,10 @@ public class BuyArticlesPage extends BasePage {
     }
 
     public void selectItem(String laptopName) {
-        clickOnSelectedObjet(BuyArticlesPageObject.ITEMS_LIST, laptopName);
-    }
-    public void verifyTheLaptopIsDisplayed(String laptopName){
-        verifyTheItemIsDisplayed(BuyArticlesPageObject.ITEMS_LIST_ON_CART, laptopName);
+        clickOnSelectedObjet(buyArticlesPageObject.ITEMS_LIST, laptopName);
     }
 
-
+    public void verifyTheLaptopIsDisplayed(String laptopName) {
+        verifyTheItemIsDisplayed(buyArticlesPageObject.ITEMS_LIST_ON_CART, laptopName);
+    }
 }

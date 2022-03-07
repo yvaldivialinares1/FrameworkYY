@@ -9,77 +9,22 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+        <selenium-server.version>3.141.59</selenium-server.version>
+        <cucumber.version>6.8.1</cucumber.version>
+<!--        <appium.java-client.version>7.3.0</appium.java-client.version>-->
+        <guava.version>30.0-jre</guava.version>
+        <log4j-core.version>2.14.0</log4j-core.version>
+        <extentreports-cucumber6-adapter.version>2.1.0</extentreports-cucumber6-adapter.version>
+        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+        <extentreports.version>5.0.4</extentreports.version>
+        <lombok.version>1.18.16</lombok.version>
+        <formatter.version>1.6</formatter.version>
         <rest-assured-version>4.1.2</rest-assured-version>
     </properties>
+
     <dependencies>
-
-        <dependency>
-
-            <groupId>io.cucumber</groupId>
-
-            <artifactId>cucumber-java</artifactId>
-
-            <version>5.5.0</version>
-
-            <scope>test</scope>
-
-        </dependency>
-
-        <dependency>
-
-            <groupId>io.cucumber</groupId>
-
-            <artifactId>cucumber-junit</artifactId>
-
-            <version>5.5.0</version>
-
-            <scope>test</scope>
-
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
-
-        <dependency>
-
-            <groupId>junit</groupId>
-
-            <artifactId>junit</artifactId>
-
-            <version>4.13-beta-3</version>
-
-            <scope>test</scope>
-
-        </dependency>
-
-        <dependency>
-
-            <groupId>org.seleniumhq.selenium</groupId>
-
-            <artifactId>selenium-java</artifactId>
-
-            <version>3.141.5</version>
-
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-
-        <dependency>
-
-            <groupId>commons-io</groupId>
-
-            <artifactId>commons-io</artifactId>
-
-            <version>2.6</version>
-
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>1.2.5</version>
-            <scope>test</scope>
-        </dependency>
         <!--Data Generator Tools-->
 
         <!-- https://github.com/DiUS/java-faker -->
@@ -87,13 +32,6 @@
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-jvm-deps</artifactId>
-            <version>1.0.6</version>
-            <scope>provided</scope>
         </dependency>
         <!--Rest Assured Tools-->
 
@@ -112,6 +50,7 @@
             <version>${rest-assured-version}</version>
             <scope>test</scope>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy -->
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
@@ -124,21 +63,117 @@
             <artifactId>json</artifactId>
             <version>20211205</version>
         </dependency>
+        <!-- Tools-->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>15.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-server</artifactId>
+            <version>${selenium-server.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <!--  https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer-->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-jvm</artifactId>
+            <version>${cucumber.version}</version>
+            <type>pom</type>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13-beta-3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentreports.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber6-adapter</artifactId>
+            <version>${extentreports-cucumber6-adapter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.googlejavaformat</groupId>
+            <artifactId>google-java-format</artifactId>
+            <version>${formatter.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
+        </dependency>
+
+<!--        &lt;!&ndash; Mobile &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.appium</groupId>-->
+<!--            <artifactId>java-client</artifactId>-->
+<!--            <version>${appium.java-client.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+        <!-- End Mobile -->
     </dependencies>
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.0</version>
+                <version>${maven.compiler.plugin.version}</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <encoding>UTF-8</encoding>
+                    <release>11</release>
                 </configuration>
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>3.0.0-M5</version>-->
+<!--            </plugin>-->
         </plugins>
     </build>
-
-
 </project>

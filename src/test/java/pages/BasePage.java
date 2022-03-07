@@ -1,11 +1,12 @@
 package pages;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -17,6 +18,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class BasePage {
@@ -25,26 +27,34 @@ public class BasePage {
     public static DataTable data;
     public static Map<String, String> scenarioData = new HashMap<>();
 
-    /*@BeforeClass
+    @Before
     public void SetUp() {
 
         System.setProperty("webdriver.chrome.driver",
                 System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 
-        //driver = new ChromeDriver();
-    }*/
+        driver = new ChromeDriver();
+        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+    }
 
-    /*@AfterClass
+    @AfterClass
     public void tearDown() {
         driver.close();
-    }*/
+    }
+//    @AfterStep
+//    public void addScreenshot(Scenario scenario){
+//
+//        final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//        scenario.attach(screenshot, "image/png", "image");
+//
+//    }
 
     public static void closeBrowser() {
         driver.quit();
     }
 
     static {
-        DesiredCapabilities caps = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, 10);

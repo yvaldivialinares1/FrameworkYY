@@ -1,7 +1,7 @@
 package steps;
 
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
+import pages.BasePage;
 import pages.BuyArticlesPage;
 
 public class BuyArticlesSteps {

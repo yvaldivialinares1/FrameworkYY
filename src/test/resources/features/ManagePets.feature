@@ -1,5 +1,5 @@
 @managePets
-Feature: Add, modify and update pets
+Feature: Manage pet API services
 
   Background:
     Given Retrieve data from api services with path v2/pet from addPet.txt and save variables bellow
