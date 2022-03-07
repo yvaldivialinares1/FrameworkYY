@@ -1,6 +1,7 @@
+@regression @registerUser
 Feature: Register a user
 
-  @registerUser @demoblaze
+  @registerUserSuccessful
   Scenario: Register a user Successful
     Given Navigate to Demoblaze web
     When Click on the button Sign up

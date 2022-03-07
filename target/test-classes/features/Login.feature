@@ -1,3 +1,4 @@
+@regression @loginLogOut
 Feature: Login y Logout
 
   Background: To log in you need to be registered
@@ -8,7 +9,7 @@ Feature: Login y Logout
     And Click on the button Sign Up
     And The Sign up successful alert is displayed
 
-  @loginLogOut @demoblaze
+  @loginLogOutSuccessful
   Scenario: Login Successful
     When Click on the button Log in
     And The user complete the fields with the correct data for the login

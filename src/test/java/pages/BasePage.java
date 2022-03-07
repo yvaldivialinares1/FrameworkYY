@@ -1,70 +1,29 @@
 package pages;
 
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.Hooks;
 import utils.RestAssuredExtension;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Logger;
 
 public class BasePage {
     protected static WebDriver driver;
     private static WebDriverWait wait;
     public static DataTable data;
     public static Map<String, String> scenarioData = new HashMap<>();
+    Logger log ;
 
-    @Before
-    public void SetUp() {
-
-        System.setProperty("webdriver.chrome.driver",
-                System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
-
-        driver = new ChromeDriver();
-        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-    }
-
-    @AfterClass
-    public void tearDown() {
-        driver.close();
-    }
-//    @AfterStep
-//    public void addScreenshot(Scenario scenario){
-//
-//        final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//        scenario.attach(screenshot, "image/png", "image");
-//
-//    }
-
-    public static void closeBrowser() {
-        driver.quit();
-    }
-
-    static {
-        ChromeOptions chromeOptions = new ChromeOptions();
-        driver = new ChromeDriver(chromeOptions);
-        wait = new WebDriverWait(driver, 10);
-        System.setProperty("webdriver.chrome.driver",
-                "/src/test/lib/chromedriver.exe");
-    }
-
-    public BasePage(WebDriver driver) {
-        BasePage.driver = driver;
-        wait = new WebDriverWait(driver, 10);
+    public BasePage() {
+        driver = Hooks.driver;
+        wait = Hooks.wait;
+        log=Hooks.log;
     }
 
     public void explicitWait(By by) {
@@ -148,7 +107,7 @@ public class BasePage {
                                     // SAVE
                                     saveInScenarioContext(KEY, VALUES);
                                 } catch (NullPointerException e) {
-                                    System.out.println(String.format("Path specified doesn't exist: %s", VALUES));
+                                    log.info(String.format("Path specified doesn't exist: %s", VALUES));
                                 }
                             });
         }
@@ -156,7 +115,7 @@ public class BasePage {
 
     public DataTable createDataTable(List<List<String>> table) {
         data = DataTable.create(table);
-        System.out.println(data);
+        log.info(String.valueOf(data));
         return data;
     }
 
@@ -164,15 +123,16 @@ public class BasePage {
         try {
             if (!scenarioData.containsKey(key)) {
                 scenarioData.put(key, text);
-                System.out.println(String.format("Save as Scenario Context key: %s with value: %s ", key, text));
+                log.info(String.format("Save as Scenario Context key: %s with value: %s ", key, text));
             } else {
                 scenarioData.replace(key, text);
-                System.out.println(String.format("Update Scenario Context key: %s with value: %s ", key, text));
+                log.info(String.format("Update Scenario Context key: %s with value: %s ", key, text));
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     public String getScenarioContextVariables(String key) {
         try {
             return scenarioData.get(key);

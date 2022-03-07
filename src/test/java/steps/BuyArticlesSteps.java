@@ -1,7 +1,7 @@
 package steps;
 
 import io.cucumber.java.en.And;
-import pages.BasePage;
+import org.junit.Assert;
 import pages.BuyArticlesPage;
 
 public class BuyArticlesSteps {

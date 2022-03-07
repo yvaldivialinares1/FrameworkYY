@@ -2,6 +2,7 @@ package steps;
 
 import io.cucumber.java.en.*;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import pages.ManagePetsPage;
 import utils.RestAssuredExtension;
 

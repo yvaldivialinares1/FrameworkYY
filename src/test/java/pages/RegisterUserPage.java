@@ -8,11 +8,13 @@ import utils.DataGenerator;
 
 public class RegisterUserPage extends BasePage {
 
-    public static String emailGenerated = DataGenerator.getEmail();
-    public static String passwordGenerated = DataGenerator.getPassword();
+    public static String emailGenerated;
+    public static String passwordGenerated;
 
     public RegisterUserPage() {
-        super(driver);
+        super();
+        emailGenerated = DataGenerator.getEmail();
+        passwordGenerated = DataGenerator.getPassword();
     }
 
     public void navigateTo() {

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 6, 2022 10:32:05 PM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 7, 2022 02:54:57 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -77,7 +72,6 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -85,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@addLaptopToCart</a><a class="dropdown-item" href="#">@loginLogOut</a><a class="dropdown-item" href="#">@registerUser</a><a class="dropdown-item" href="#">@demoblaze</a><a class="dropdown-item" href="#">@managePets</a>
+<a class="dropdown-item" href="#">@registerUserSuccessful</a><a class="dropdown-item" href="#">@addPets</a><a class="dropdown-item" href="#">@findPets</a><a class="dropdown-item" href="#">@registerUser</a><a class="dropdown-item" href="#">@addLaptopToCart</a><a class="dropdown-item" href="#">@loginLogOutSuccessful</a><a class="dropdown-item" href="#">@managePets</a><a class="dropdown-item" href="#">@loginLogOut</a><a class="dropdown-item" href="#">@addLaptopToCartSuccessful</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@updatePets</a>
 </ul>
 </li>
 </ul>
@@ -93,12 +87,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag=""
+          tag="@addLaptopToCart @regression"
           device="">
           <div class="test-detail">
             <p class="name">By Articles</p>
             <p class="text-sm">
-              <span>22:32:05 PM</span> / <span>00:14:802</span>
+              <span>14:54:58 PM</span> / <span>00:19:703</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -107,11 +101,13 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">By Articles</h5>
-<span class='badge badge-success'>03.06.2022 22:32:05</span>
-<span class='badge badge-danger'>03.06.2022 22:32:20</span>
-<span class='badge badge-default'>00:14:802</span>
+<span class='badge badge-success'>03.07.2022 14:54:58</span>
+<span class='badge badge-danger'>03.07.2022 14:55:17</span>
+<span class='badge badge-default'>00:19:703</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@addLaptopToCart</span>
+<span class="badge badge-pill badge-default">@regression</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div>
@@ -135,6 +131,9 @@
     </div>
         <div class="collapse">
           <div class="card-body">
+              <div class="step pass-bg" >
+                <span>steps.Hooks.initDriver(io.cucumber.java.Scenario)</span>
+              </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.navigateToDemozable()">
                 <span>Given Navigate to Demoblaze web</span>
               </div>
@@ -263,13 +262,8 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="steps.LoginSteps.closeBrowser()">
-                <span>And Close browser</span>
-              </div>
-              <div class="step pass-bg" title="steps.LoginSteps.closeBrowser()">
-                <span>And Close browser</span>
-      <div>
-      </div>
+              <div class="step pass-bg" >
+                <span>steps.Hooks.closeDriver()</span>
               </div>
           </div>
         </div>
@@ -277,27 +271,29 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="38"
+        <li class="test-item"  status="pass" test-id="40"
           author=""
-          tag=""
+          tag="@loginLogOut @regression"
           device="">
           <div class="test-detail">
             <p class="name">Login y Logout</p>
             <p class="text-sm">
-              <span>22:32:20 PM</span> / <span>00:00:248</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>14:55:18 PM</span> / <span>00:15:666</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Login y Logout</h5>
-<span class='badge badge-success'>03.06.2022 22:32:20</span>
-<span class='badge badge-danger'>03.06.2022 22:32:20</span>
-<span class='badge badge-default'>00:00:248</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<h5 class="test-status text-pass">Login y Logout</h5>
+<span class='badge badge-success'>03.07.2022 14:55:18</span>
+<span class='badge badge-danger'>03.07.2022 14:55:33</span>
+<span class='badge badge-default'>00:15:666</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@loginLogOut</span>
+<span class="badge badge-pill badge-default">@regression</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div>
@@ -305,7 +301,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>Login Successful</div>
+        <div class="node" id="41"><span class="badge log pass-bg mr-2">Pass</span>Login Successful</div>
       </div>
     </div>
         <div class="collapse">
@@ -316,162 +312,112 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="40"><span class="badge log fail-bg mr-2">Fail</span>Login Successful</div>
+        <div class="node" id="42"><span class="badge log pass-bg mr-2">Pass</span>Login Successful</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
+              <div class="step pass-bg" >
+                <span>steps.Hooks.initDriver(io.cucumber.java.Scenario)</span>
+              </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.navigateToDemozable()">
                 <span>Given Navigate to Demoblaze web</span>
               </div>
-              <div class="step fail-bg" title="steps.RegisterUserSteps.navigateToDemozable()">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.navigateToDemozable()">
                 <span>Given Navigate to Demoblaze web</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UY-IT01203', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\YAILIN~1.VAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a983540967d8f4c944b5031f32f2472
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at pages.BasePage.navigateTo(BasePage.java:79)
-	at pages.RegisterUserPage.navigateTo(RegisterUserPage.java:19)
-	at steps.RegisterUserSteps.navigateToDemozable(RegisterUserSteps.java:15)
-	at ✽.Navigate to Demoblaze web(file:///C:/DEV/src/test/resources/features/Login.feature:4)
-</textarea>
-      
       </div>
+              </div>
+              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
+                <span>Given Click on the button Sign up</span>
+              </div>
+              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
+                <span>Given Click on the button Sign up</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UY-IT01203', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\YAILIN~1.VAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a983540967d8f4c944b5031f32f2472
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at pages.BasePage.navigateTo(BasePage.java:79)
-	at pages.RegisterUserPage.navigateTo(RegisterUserPage.java:19)
-	at steps.RegisterUserSteps.navigateToDemozable(RegisterUserSteps.java:15)
-	at ✽.Navigate to Demoblaze web(file:///C:/DEV/src/test/resources/features/Login.feature:4)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
-                <span>Given Click on the button Sign up</span>
-              </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
-                <span>Given Click on the button Sign up</span>
-      <div>Step skipped
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
                 <span>And Write Username</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
                 <span>And Write Username</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
                 <span>And Write Password</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
                 <span>And Write Password</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
                 <span>And Click on the button Sign Up</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
                 <span>And Click on the button Sign Up</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.checkAlert(java.lang.String)">
                 <span>And The Sign up successful alert is displayed</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.checkAlert(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.checkAlert(java.lang.String)">
                 <span>And The Sign up successful alert is displayed</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
                 <span>When Click on the button Log in</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
                 <span>When Click on the button Log in</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.LoginSteps.typeUserPassword()">
                 <span>And The user complete the fields with the correct data for the login</span>
               </div>
-              <div class="step skip-bg" title="steps.LoginSteps.typeUserPassword()">
+              <div class="step pass-bg" title="steps.LoginSteps.typeUserPassword()">
                 <span>And The user complete the fields with the correct data for the login</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
                 <span>And Click on the button Log In</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
                 <span>And Click on the button Log In</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.LoginSteps.verifyUsernameIsdisplayed(java.lang.String)">
                 <span>Then Verify the username is displayed</span>
               </div>
-              <div class="step skip-bg" title="steps.LoginSteps.verifyUsernameIsdisplayed(java.lang.String)">
+              <div class="step pass-bg" title="steps.LoginSteps.verifyUsernameIsdisplayed(java.lang.String)">
                 <span>Then Verify the username is displayed</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
                 <span>And Click on the button Log out</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
                 <span>And Click on the button Log out</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.LoginSteps.verifyUsernameIsdisplayed(java.lang.String)">
                 <span>And Verify the username is not displayed</span>
               </div>
-              <div class="step skip-bg" title="steps.LoginSteps.verifyUsernameIsdisplayed(java.lang.String)">
+              <div class="step pass-bg" title="steps.LoginSteps.verifyUsernameIsdisplayed(java.lang.String)">
                 <span>And Verify the username is not displayed</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step pass-bg" title="steps.LoginSteps.closeBrowser()">
-                <span>And Close browser</span>
-              </div>
-              <div class="step skip-bg" title="steps.LoginSteps.closeBrowser()">
-                <span>And Close browser</span>
-      <div>Step skipped
-      </div>
+              <div class="step pass-bg" >
+                <span>steps.Hooks.closeDriver()</span>
               </div>
           </div>
         </div>
@@ -479,14 +425,14 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="67"
+        <li class="test-item"  status="pass" test-id="71"
           author=""
-          tag="@managePets"
+          tag="@managePets @regression"
           device="">
           <div class="test-detail">
             <p class="name">Manage pet API services</p>
             <p class="text-sm">
-              <span>22:32:21 PM</span> / <span>00:07:483</span>
+              <span>14:55:34 PM</span> / <span>00:15:392</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -495,12 +441,13 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Manage pet API services</h5>
-<span class='badge badge-success'>03.06.2022 22:32:21</span>
-<span class='badge badge-danger'>03.06.2022 22:32:28</span>
-<span class='badge badge-default'>00:07:483</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=67</span>
+<span class='badge badge-success'>03.07.2022 14:55:34</span>
+<span class='badge badge-danger'>03.07.2022 14:55:49</span>
+<span class='badge badge-default'>00:15:392</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=71</span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">@managePets</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@managePets</span>
+<span class="badge badge-pill badge-default">@regression</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div>
@@ -508,7 +455,7 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>Find Pet by id</div>
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Add Pet</div>
       </div>
     </div>
         <div class="collapse">
@@ -519,11 +466,60 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="69"><span class="badge log pass-bg mr-2">Pass</span>Find Pet by id</div>
+        <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>Add Pet</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
+              <div class="step pass-bg" >
+                <span>steps.Hooks.initDriver(io.cucumber.java.Scenario)</span>
+              </div>
+              <div class="step pass-bg" title="steps.ManagePetsSteps.dataFromApiServicesAndSaveVariables(java.lang.String,java.lang.String,java.util.List<java.util.List<java.lang.String>>)">
+                <span>Given Retrieve data from api services with path v2/pet from addPet.txt and save variables bellow</span>
+      <div><table class='markup-table table '><tr><td>PetId</td><td>id</td></tr></table>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.ManagePetsSteps.dataFromApiServicesAndSaveVariables(java.lang.String,java.lang.String,java.util.List<java.util.List<java.lang.String>>)">
+                <span>Given Retrieve data from api services with path v2/pet from addPet.txt and save variables bellow</span>
+      <div><table class='markup-table table '><tr><td>PetId</td><td>id</td></tr></table>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.ManagePetsSteps.verifyStatusCode(java.lang.String)">
+                <span>Then The service responds with status 200</span>
+              </div>
+              <div class="step pass-bg" title="steps.ManagePetsSteps.verifyStatusCode(java.lang.String)">
+                <span>Then The service responds with status 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" >
+                <span>steps.Hooks.closeDriver()</span>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="82"><span class="badge log pass-bg mr-2">Pass</span>Find Pet by id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>Find Pet by id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" >
+                <span>steps.Hooks.initDriver(io.cucumber.java.Scenario)</span>
+              </div>
               <div class="step pass-bg" title="steps.ManagePetsSteps.dataFromApiServicesAndSaveVariables(java.lang.String,java.lang.String,java.util.List<java.util.List<java.lang.String>>)">
                 <span>Given Retrieve data from api services with path v2/pet from addPet.txt and save variables bellow</span>
       <div><table class='markup-table table '><tr><td>PetId</td><td>id</td></tr></table>
@@ -550,13 +546,16 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
       <div>
       </div>
               </div>
+              <div class="step pass-bg" >
+                <span>steps.Hooks.closeDriver()</span>
+              </div>
           </div>
         </div>
   </div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>Update an existing pet</div>
+        <div class="node" id="94"><span class="badge log pass-bg mr-2">Pass</span>Update an existing pet</div>
       </div>
     </div>
         <div class="collapse">
@@ -567,11 +566,14 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="77"><span class="badge log pass-bg mr-2">Pass</span>Update an existing pet</div>
+        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Update an existing pet</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
+              <div class="step pass-bg" >
+                <span>steps.Hooks.initDriver(io.cucumber.java.Scenario)</span>
+              </div>
               <div class="step pass-bg" title="steps.ManagePetsSteps.dataFromApiServicesAndSaveVariables(java.lang.String,java.lang.String,java.util.List<java.util.List<java.lang.String>>)">
                 <span>Given Retrieve data from api services with path v2/pet from addPet.txt and save variables bellow</span>
       <div><table class='markup-table table '><tr><td>PetId</td><td>id</td></tr></table>
@@ -597,6 +599,9 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
                 <span>Then The service responds with status 200</span>
       <div>
       </div>
+              </div>
+              <div class="step pass-bg" >
+                <span>steps.Hooks.closeDriver()</span>
               </div>
           </div>
         </div>
@@ -604,27 +609,29 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="84"
+        <li class="test-item"  status="pass" test-id="106"
           author=""
-          tag=""
+          tag="@registerUser @regression"
           device="">
           <div class="test-detail">
             <p class="name">Register a user</p>
             <p class="text-sm">
-              <span>22:32:28 PM</span> / <span>00:00:017</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>14:55:49 PM</span> / <span>00:07:713</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Register a user</h5>
-<span class='badge badge-success'>03.06.2022 22:32:28</span>
-<span class='badge badge-danger'>03.06.2022 22:32:28</span>
-<span class='badge badge-default'>00:00:017</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=84</span>
+<h5 class="test-status text-pass">Register a user</h5>
+<span class='badge badge-success'>03.07.2022 14:55:49</span>
+<span class='badge badge-danger'>03.07.2022 14:55:57</span>
+<span class='badge badge-default'>00:07:713</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=106</span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@registerUser</span>
+<span class="badge badge-pill badge-default">@regression</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div>
@@ -632,7 +639,7 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="85"><span class="badge log pass-bg mr-2">Pass</span>Register a user Successful</div>
+        <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Register a user Successful</div>
       </div>
     </div>
         <div class="collapse">
@@ -643,114 +650,64 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="86"><span class="badge log fail-bg mr-2">Fail</span>Register a user Successful</div>
+        <div class="node" id="108"><span class="badge log pass-bg mr-2">Pass</span>Register a user Successful</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
+              <div class="step pass-bg" >
+                <span>steps.Hooks.initDriver(io.cucumber.java.Scenario)</span>
+              </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.navigateToDemozable()">
                 <span>Given Navigate to Demoblaze web</span>
               </div>
-              <div class="step fail-bg" title="steps.RegisterUserSteps.navigateToDemozable()">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.navigateToDemozable()">
                 <span>Given Navigate to Demoblaze web</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UY-IT01203', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\YAILIN~1.VAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a983540967d8f4c944b5031f32f2472
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at pages.BasePage.navigateTo(BasePage.java:79)
-	at pages.RegisterUserPage.navigateTo(RegisterUserPage.java:19)
-	at steps.RegisterUserSteps.navigateToDemozable(RegisterUserSteps.java:15)
-	at ✽.Navigate to Demoblaze web(file:///C:/DEV/src/test/resources/features/RegisterUser.feature:5)
-</textarea>
-      
       </div>
+              </div>
+              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
+                <span>When Click on the button Sign up</span>
+              </div>
+              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
+                <span>When Click on the button Sign up</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UY-IT01203', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\YAILIN~1.VAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a983540967d8f4c944b5031f32f2472
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at pages.BasePage.navigateTo(BasePage.java:79)
-	at pages.RegisterUserPage.navigateTo(RegisterUserPage.java:19)
-	at steps.RegisterUserSteps.navigateToDemozable(RegisterUserSteps.java:15)
-	at ✽.Navigate to Demoblaze web(file:///C:/DEV/src/test/resources/features/RegisterUser.feature:5)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
-                <span>When Click on the button Sign up</span>
-              </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
-                <span>When Click on the button Sign up</span>
-      <div>Step skipped
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
                 <span>And Write Username</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
                 <span>And Write Username</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
                 <span>And Write Password</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.writreOnField(java.lang.String)">
                 <span>And Write Password</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
                 <span>And Click on the button Sign Up</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.clickOnButton(java.lang.String)">
                 <span>And Click on the button Sign Up</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
               <div class="step pass-bg" title="steps.RegisterUserSteps.checkAlert(java.lang.String)">
                 <span>Then The Sign up successful alert is displayed</span>
               </div>
-              <div class="step skip-bg" title="steps.RegisterUserSteps.checkAlert(java.lang.String)">
+              <div class="step pass-bg" title="steps.RegisterUserSteps.checkAlert(java.lang.String)">
                 <span>Then The Sign up successful alert is displayed</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step pass-bg" title="steps.LoginSteps.closeBrowser()">
-                <span>And Close browser</span>
-              </div>
-              <div class="step skip-bg" title="steps.LoginSteps.closeBrowser()">
-                <span>And Close browser</span>
-      <div>Step skipped
-      </div>
+              <div class="step pass-bg" >
+                <span>steps.Hooks.closeDriver()</span>
               </div>
           </div>
         </div>
@@ -767,73 +724,11 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.NoSuchSessionException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.NoSuchSessionException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:32:20 PM</td>
-<td>
-<a href="#" class="linked" test-id='38' id='42'>Given Navigate to Demoblaze web</a>
-<div class="">
-<span class="badge badge-default">Login y Logout.Login Successful.Given Navigate to Demoblaze web</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:32:28 PM</td>
-<td>
-<a href="#" class="linked" test-id='84' id='88'>Given Navigate to Demoblaze web</a>
-<div class="">
-<span class="badge badge-default">Register a user.Register a user Successful.Given Navigate to Demoblaze web</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">11</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -842,12 +737,12 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <span class="meta">
 <span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@addLaptopToCart</p>
+<p class="name">@registerUserSuccessful</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@addLaptopToCart</h4>
+<h4>@registerUserSuccessful</h4>
 <span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -861,21 +756,21 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:05 PM</td>
+<td>14:55:49 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>To add a laptop to the shopping cart</a>
+<a href="#" class="linked" test-id='106' id='107'>Register a user Successful</a>
 <div class="">
-<span class="badge badge-default">By Articles.To add a laptop to the shopping cart</span>
+<span class="badge badge-default">Register a user.Register a user Successful</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:05 PM</td>
+<td>14:55:49 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>To add a laptop to the shopping cart</a>
+<a href="#" class="linked" test-id='106' id='108'>Register a user Successful</a>
 <div class="">
-<span class="badge badge-default">By Articles.To add a laptop to the shopping cart</span>
+<span class="badge badge-default">Register a user.Register a user Successful</span>
 </div>
 </td>
 </tr>
@@ -886,17 +781,15 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@loginLogOut</p>
+<p class="name">@addPets</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@loginLogOut</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@addPets</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -909,21 +802,21 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:20 PM</td>
+<td>14:55:34 PM</td>
 <td>
-<a href="#" class="linked" test-id='38' id='39'>Login Successful</a>
+<a href="#" class="linked" test-id='71' id='72'>Add Pet</a>
 <div class="">
-<span class="badge badge-default">Login y Logout.Login Successful</span>
+<span class="badge badge-default">Manage pet API services.Add Pet</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:32:20 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:34 PM</td>
 <td>
-<a href="#" class="linked" test-id='38' id='40'>Login Successful</a>
+<a href="#" class="linked" test-id='71' id='73'>Add Pet</a>
 <div class="">
-<span class="badge badge-default">Login y Logout.Login Successful</span>
+<span class="badge badge-default">Manage pet API services.Add Pet</span>
 </div>
 </td>
 </tr>
@@ -934,17 +827,61 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@findPets</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@findPets</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='82'>Find Pet by id</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Find Pet by id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='83'>Find Pet by id</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Find Pet by id</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
 </span>
 <p class="name">@registerUser</p>
-<p class="duration text-sm">2 tests</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@registerUser</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -957,19 +894,26 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:28 PM</td>
+<td>14:55:49 PM</td>
 <td>
-<a href="#" class="linked" test-id='84' id='85'>Register a user Successful</a>
+<a href="#" class="linked" test-id='106' id='106'>Register a user</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='106' id='107'>Register a user Successful</a>
 <div class="">
 <span class="badge badge-default">Register a user.Register a user Successful</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:32:28 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:49 PM</td>
 <td>
-<a href="#" class="linked" test-id='84' id='86'>Register a user Successful</a>
+<a href="#" class="linked" test-id='106' id='108'>Register a user Successful</a>
 <div class="">
 <span class="badge badge-default">Register a user.Register a user Successful</span>
 </div>
@@ -982,17 +926,15 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>4</span>
-<span class='badge log badge-danger'>2</span>
+<span class='badge log pass-bg'>3</span>
 </span>
-<p class="name">@demoblaze</p>
-<p class="duration text-sm">6 tests</p>
+<p class="name">@addLaptopToCart</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@demoblaze</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>@addLaptopToCart</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1005,7 +947,14 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:05 PM</td>
+<td>14:54:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>By Articles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:58 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>To add a laptop to the shopping cart</a>
 <div class="">
@@ -1015,51 +964,11 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:05 PM</td>
+<td>14:54:58 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='3'>To add a laptop to the shopping cart</a>
 <div class="">
 <span class="badge badge-default">By Articles.To add a laptop to the shopping cart</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:20 PM</td>
-<td>
-<a href="#" class="linked" test-id='38' id='39'>Login Successful</a>
-<div class="">
-<span class="badge badge-default">Login y Logout.Login Successful</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:32:20 PM</td>
-<td>
-<a href="#" class="linked" test-id='38' id='40'>Login Successful</a>
-<div class="">
-<span class="badge badge-default">Login y Logout.Login Successful</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:28 PM</td>
-<td>
-<a href="#" class="linked" test-id='84' id='85'>Register a user Successful</a>
-<div class="">
-<span class="badge badge-default">Register a user.Register a user Successful</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:32:28 PM</td>
-<td>
-<a href="#" class="linked" test-id='84' id='86'>Register a user Successful</a>
-<div class="">
-<span class="badge badge-default">Register a user.Register a user Successful</span>
 </div>
 </td>
 </tr>
@@ -1070,15 +979,15 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>5</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@managePets</p>
-<p class="duration text-sm">5 tests</p>
+<p class="name">@loginLogOutSuccessful</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@managePets</h4>
-<span status="pass" class='badge log pass-bg'>5 passed</span>
+<h4>@loginLogOutSuccessful</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1091,16 +1000,82 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:21 PM</td>
+<td>14:55:18 PM</td>
 <td>
-<a href="#" class="linked" test-id='67' id='67'>Manage pet API services</a>
+<a href="#" class="linked" test-id='40' id='41'>Login Successful</a>
+<div class="">
+<span class="badge badge-default">Login y Logout.Login Successful</span>
+</div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:21 PM</td>
+<td>14:55:18 PM</td>
 <td>
-<a href="#" class="linked" test-id='67' id='68'>Find Pet by id</a>
+<a href="#" class="linked" test-id='40' id='42'>Login Successful</a>
+<div class="">
+<span class="badge badge-default">Login y Logout.Login Successful</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">@managePets</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@managePets</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='71'>Manage pet API services</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='72'>Add Pet</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Add Pet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='73'>Add Pet</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Add Pet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='82'>Find Pet by id</a>
 <div class="">
 <span class="badge badge-default">Manage pet API services.Find Pet by id</span>
 </div>
@@ -1108,9 +1083,9 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:21 PM</td>
+<td>14:55:41 PM</td>
 <td>
-<a href="#" class="linked" test-id='67' id='69'>Find Pet by id</a>
+<a href="#" class="linked" test-id='71' id='83'>Find Pet by id</a>
 <div class="">
 <span class="badge badge-default">Manage pet API services.Find Pet by id</span>
 </div>
@@ -1118,9 +1093,9 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:26 PM</td>
+<td>14:55:45 PM</td>
 <td>
-<a href="#" class="linked" test-id='67' id='76'>Update an existing pet</a>
+<a href="#" class="linked" test-id='71' id='94'>Update an existing pet</a>
 <div class="">
 <span class="badge badge-default">Manage pet API services.Update an existing pet</span>
 </div>
@@ -1128,9 +1103,328 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:32:26 PM</td>
+<td>14:55:45 PM</td>
 <td>
-<a href="#" class="linked" test-id='67' id='77'>Update an existing pet</a>
+<a href="#" class="linked" test-id='71' id='95'>Update an existing pet</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Update an existing pet</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@loginLogOut</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@loginLogOut</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='40'>Login y Logout</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='41'>Login Successful</a>
+<div class="">
+<span class="badge badge-default">Login y Logout.Login Successful</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='42'>Login Successful</a>
+<div class="">
+<span class="badge badge-default">Login y Logout.Login Successful</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@addLaptopToCartSuccessful</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@addLaptopToCartSuccessful</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To add a laptop to the shopping cart</a>
+<div class="">
+<span class="badge badge-default">By Articles.To add a laptop to the shopping cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>To add a laptop to the shopping cart</a>
+<div class="">
+<span class="badge badge-default">By Articles.To add a laptop to the shopping cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>16</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">16 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>16 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>By Articles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To add a laptop to the shopping cart</a>
+<div class="">
+<span class="badge badge-default">By Articles.To add a laptop to the shopping cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>To add a laptop to the shopping cart</a>
+<div class="">
+<span class="badge badge-default">By Articles.To add a laptop to the shopping cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='40'>Login y Logout</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='41'>Login Successful</a>
+<div class="">
+<span class="badge badge-default">Login y Logout.Login Successful</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='42'>Login Successful</a>
+<div class="">
+<span class="badge badge-default">Login y Logout.Login Successful</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='71'>Manage pet API services</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='72'>Add Pet</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Add Pet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='73'>Add Pet</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Add Pet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='82'>Find Pet by id</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Find Pet by id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='83'>Find Pet by id</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Find Pet by id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='94'>Update an existing pet</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Update an existing pet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='95'>Update an existing pet</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Update an existing pet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='106' id='106'>Register a user</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='106' id='107'>Register a user Successful</a>
+<div class="">
+<span class="badge badge-default">Register a user.Register a user Successful</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='106' id='108'>Register a user Successful</a>
+<div class="">
+<span class="badge badge-default">Register a user.Register a user Successful</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@updatePets</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@updatePets</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='94'>Update an existing pet</a>
+<div class="">
+<span class="badge badge-default">Manage pet API services.Update an existing pet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='95'>Update an existing pet</a>
 <div class="">
 <span class="badge badge-default">Manage pet API services.Update an existing pet</span>
 </div>
@@ -1153,25 +1447,25 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 6, 2022 10:32:05 PM</h3>
+<h3>Mar 7, 2022 02:54:57 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 6, 2022 10:32:29 PM</h3>
+<h3>Mar 7, 2022 02:55:58 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>4</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>2</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -1187,12 +1481,12 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'>
-<b>2</b> features passed
+<div><small data-tooltip='100%'>
+<b>4</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='50%'><b>2</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1210,9 +1504,9 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='80%'><b>8</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>12</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='20%'><b>2</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1230,10 +1524,10 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='76%'><b>66</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>96</b> steps passed</small></div>
 <div>
-<small data-tooltip='2%'><b>2</b> steps failed,
-<b>18</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -1249,7 +1543,7 @@ Session ID: 0a983540967d8f4c944b5031f32f2472
 </div></div>
 <script>
 var timeline = {
-"By Articles":14.802,"Login y Logout":0.248,"Manage pet API services":7.483,"Register a user":0.017
+"By Articles":19.703,"Login y Logout":15.666,"Manage pet API services":15.392,"Register a user":7.713
 };
 </script>
 <div class="row">
@@ -1259,7 +1553,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@addLaptopToCart</td>
+<td>@registerUserSuccessful</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -1267,32 +1561,80 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@loginLogOut</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>50%</td>
-</tr>
-<tr>
-<td>@registerUser</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>50%</td>
-</tr>
-<tr>
-<td>@demoblaze</td>
-<td>4</td>
+<td>@addPets</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>66.667%</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@findPets</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@registerUser</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@addLaptopToCart</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@loginLogOutSuccessful</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>@managePets</td>
-<td>5</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@loginLogOut</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@addLaptopToCartSuccessful</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@updatePets</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1307,21 +1649,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
-failParent: 2,
+passParent: 4,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 8,
-failChild: 2,
+passChild: 12,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 66,
-failGrandChild: 2,
+passGrandChild: 96,
+failGrandChild: 0,
 warningGrandChild: 0,
-skipGrandChild: 18,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };

@@ -1,3 +1,4 @@
+@regression @addLaptopToCart
 Feature: By Articles
 
   Background: To add an item to the shopping cart you need to be registered.
@@ -13,7 +14,7 @@ Feature: By Articles
     And Verify the username is displayed
 
 
-  @addLaptopToCart @demoblaze
+  @addLaptopToCartSuccessful
   Scenario: To add a laptop to the shopping cart
     When Click on the button Laptops
     And Select the laptop Sony vaio i5

@@ -21,31 +21,7 @@
 
 
 ## Running the stories
-This will run the build and (after a minute or so) will open the application in the chrome navigator and execute the test:
-
-```shell
- mvn clean test
-```
-
-  This will run a single story by tag
-
-    mvn clean test -Dcucumber.filter.tags="@login"
-
-This will run a suite based on the tags in the story files:
-
-    mvn clean test -Dcucumber.filter.tags="@regression"
-
-### Debugging the stories
-
-Just as a normal run, but replacing 'mvn' with 'mvnDebug'
-
-    mvnDebug clean test
-
-This execution will stop and wait until a debugger connects to the port
-
-    8000
-
-You can accomplish this by creating a Debug Configuration in your IDEA or running the class **RunTest.java** with debug mode. 
+Run the project runner, located in the runner directory.
 
 ## Viewing the results
 
@@ -63,7 +39,8 @@ The framework follows the *Page Object Model*. The structure of the framework is
 - **PageObjects**, *contains the objects* that will be used in the Page classes, this is used in the *initialization* of the *Page classes* by the
 - **pages**, contains *the pages themselves*, these classes define *all the selenium web driver code needed to work within a web page application*, this is the correspondence to reality.
 - **runner**: contains the cucumber runner class so far.
-- **steps**: contains the *classes that work with the Gerkin language* defined in the steps for the scenarios in the *features file*...
+- **steps**: contains the *classes that work with the Gherkin language* defined in the steps for the scenarios in the *features file*...
+    - **Note:** **Hooks.class** to manage, initialise and close the webDriver. The Hooks.class driver is called in the constructor of **BasePage.class**.
 - **utils**: contains the utility or *help classes for some functionality of the project*, e.g. *DataGenerator* and *RestAssuredExtension*.
 - **resources**, contains the *resources of the project in general*, e.g. *application properties*, *feature files*, *cumber properties*; in other projects it could also be the webview templates.
 
@@ -75,8 +52,15 @@ The framework follows the *Page Object Model*. The structure of the framework is
 4. Create the methods that verify, execute something with the *web elements.*
 5. Associate it with a *Step def class* to verify *your feature and their scenarios*.
 
+##To Do
+1. Configure the cucumber option to run the tests via the console.
+2. Configure the capabilities to manage the browser inside **application.properties**
+3. Configure the capabilities to manage Android WebDriver inside **application.properties**
+4. Create a config directory to have:
+   * **AndroidWebDriverConfigProperties.class**,
+   * **RestAssuredConfigProperties.class**
+   * **WebDriverConfigProperties.class**, 
 
-
-
-
-
+to initialise and consume from **application.properties**
+5. Migrating to **TestNG** and using the **Cucumber SprintBoot dependency**
+6. Add in the **Hooks.class** the **method takeScreenshot** for the report.

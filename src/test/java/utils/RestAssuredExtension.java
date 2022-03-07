@@ -8,6 +8,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
 import io.restassured.specification.RequestSpecification;
+import steps.Hooks;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -18,6 +19,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Properties;
+import java.util.logging.Logger;
 
 public class RestAssuredExtension {
     public static RequestSpecification request;
@@ -30,6 +32,7 @@ public class RestAssuredExtension {
             "src/test/resources/application.properties";
     public static String setBaseUri;
     public static String bodyData;
+    public static Logger log = Logger.getLogger(String.valueOf(RestAssuredExtension.class));
 
     public static void initConfig() {
         try {
@@ -49,7 +52,7 @@ public class RestAssuredExtension {
             bodyPath = new String(Files.readAllBytes(_path(path)));
             return bodyPath;
         } catch (IOException e) {
-            System.out.println("check configProperties or path variable");
+            log.info("check configProperties or path variable");
             return null;
         }
     }
@@ -76,7 +79,7 @@ public class RestAssuredExtension {
             request = RestAssured.given().spec(builderMW.build());
             response = request.post(new URI(path));
         } catch (URISyntaxException e) {
-            System.err.println("* Error in postMethod *");
+            log.info("* Error in postMethod *");
             e.printStackTrace();
         }
         return response;
@@ -117,7 +120,7 @@ public class RestAssuredExtension {
             request = RestAssured.given().spec(builderMW.build());
             response = request.put(new URI(path));
         } catch (URISyntaxException e) {
-            System.err.println("* Error in putMethod *");
+            log.info("* Error in putMethod *");
             e.printStackTrace();
         }
         return response;

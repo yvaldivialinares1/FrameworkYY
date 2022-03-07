@@ -13,7 +13,7 @@
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <selenium-server.version>3.141.59</selenium-server.version>
         <cucumber.version>6.8.1</cucumber.version>
-<!--        <appium.java-client.version>7.3.0</appium.java-client.version>-->
+        <!--        <appium.java-client.version>7.3.0</appium.java-client.version>-->
         <guava.version>30.0-jre</guava.version>
         <log4j-core.version>2.14.0</log4j-core.version>
         <extentreports-cucumber6-adapter.version>2.1.0</extentreports-cucumber6-adapter.version>
@@ -151,13 +151,13 @@
             <version>3.0.0-M5</version>
         </dependency>
 
-<!--        &lt;!&ndash; Mobile &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>io.appium</groupId>-->
-<!--            <artifactId>java-client</artifactId>-->
-<!--            <version>${appium.java-client.version}</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+        <!--        &lt;!&ndash; Mobile &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>io.appium</groupId>-->
+        <!--            <artifactId>java-client</artifactId>-->
+        <!--            <version>${appium.java-client.version}</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
         <!-- End Mobile -->
     </dependencies>
     <build>
@@ -169,11 +169,11 @@
                     <release>11</release>
                 </configuration>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <version>3.0.0-M5</version>-->
-<!--            </plugin>-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-surefire-plugin</artifactId>-->
+            <!--                <version>3.0.0-M5</version>-->
+            <!--            </plugin>-->
         </plugins>
     </build>
 </project>

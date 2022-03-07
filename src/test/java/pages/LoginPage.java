@@ -6,7 +6,7 @@ public class LoginPage extends BasePage {
     LoginPageObject loginPageObject = new LoginPageObject();
 
     public LoginPage() {
-        super(driver);
+        super();
     }
 
     public void typeCorrectUserPassword() {
