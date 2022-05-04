@@ -159,6 +159,15 @@
         <!--            <scope>test</scope>-->
         <!--        </dependency>-->
         <!-- End Mobile -->
+
+        <!--webdrivermanager tools-->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.1.1</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>

@@ -3,6 +3,7 @@ package steps;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -25,8 +26,7 @@ public class Hooks {
         log.info("***********************************************************************************************************");
         log.info("[ Configuration ] - Initializing driver configuration");
         log.info("***********************************************************************************************************");
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+
-                "/src/test/lib/chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         options.addArguments("--window-size=1920, 1080");
