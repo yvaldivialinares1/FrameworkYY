@@ -11,12 +11,15 @@
 [comment]: <> (    * Command for linux to start the device **emulator -avd device_name**)
 * Install Java 11
 * Install Maven
-* Create environment variable (JAVA_HOME and MAVEN_HOME) 
+* Create environment variable (JAVA_HOME and MAVEN_HOME)
+* Install Allure (To install Allure, download and install Scoop) [download here](https://docs.qameta.io/allure/#_installing_a_commandline)
+* If you do not have administrator permission on your computer to install Allure [see more](https://github.com/ScoopInstaller/Install#for-admin)
 
 [comment]: <> (    * **You must point to this path so you can work with the devices:**  )
 
 [comment]: <> (        * export ANDROID_SDK_HOME=/user.dir/Android/Sdk)
 
+[comment]: <> (        * export PATH=${PATH}:$ANDROID_SDK_HOME/emulator:$ANDROID_SDK_HOME/tools:$PATH**)
 [comment]: <> (        * export PATH=${PATH}:$ANDROID_SDK_HOME/emulator:$ANDROID_SDK_HOME/tools:$PATH**)
 
 
@@ -25,10 +28,13 @@ Run the project runner, located in the runner directory.
 
 ## Viewing the results
 
-* The framework uses the **Extent Report Plugin** to generate the report view for each executed test.
-* In a **test-output/** directory, a page called **Spark.html** has been generated.
+* The framework uses the **Allure Report Plugin** to generate the report view for each executed test.
+* In a target/ directory, a folder called 'allure-results' has been generated.
 * If you open it in any browser you can see the stories that have been run and their running status.
-* There should be a row for each story.  You can click on the story reports via links in the left column. You also have a dashboard and a menu with more information about the run.
+* To run it you must go to path of target/ directory and run the following command:
+```shell
+  allure generate .\allure-results --output .\allure-report --clean ; allure open --port 5000
+```
 
 # Framework YY description
 
