@@ -19,6 +19,7 @@ jobs:
       - uses: browser-actions/setup-chrome@latest
       - name: Install Chrome
         run: chrome --version
+ 
   jdk:
     runs-on: ubuntu-latest
     steps:
