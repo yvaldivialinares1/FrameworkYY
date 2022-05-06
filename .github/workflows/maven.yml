@@ -5,45 +5,22 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
-  chrome:
-    runs-on: ubuntu-latest
     steps:
-      - uses: browser-actions/setup-chrome@latest
-      - name: Install Chrome
-        run: chrome --version
- 
-  jdk:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: "11"
-          distribution: "temurin"
-          cache: maven
-          server-id: github
-          settings-path: ${{ github.workspace }}
-      - name: Build with Maven
-        run: mvn -B package --file pom.xml
-
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: 11
-          distribution: "temurin"
-          cache: maven
-      - name: Test with Maven
-        run: mvn clean test
+    - uses: actions/checkout@v3
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml test
