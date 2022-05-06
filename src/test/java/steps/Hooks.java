@@ -26,9 +26,9 @@ public class Hooks {
         "***********************************************************************************************************");
     WebDriverManager.chromedriver().setup();
     ChromeOptions options = new ChromeOptions();
-//    options.addArguments("--start-maximized");
-//    options.addArguments("--window-size=1920, 1080");
-//    options.addArguments("--disable-infobars");
+    options.addArguments("--start-maximized");
+    options.addArguments("--window-size=1920, 1080");
+    options.addArguments("--disable-infobars");
     driver = new ChromeDriver(options);
     wait = new WebDriverWait(driver, 10);
     this.scenario = scenario;
