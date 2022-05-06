@@ -1,6 +1,7 @@
 package steps;
 
-import io.cucumber.java.en.*;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import java.util.List;
 import org.junit.Assert;
 import pages.ManagePetsPage;
