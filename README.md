@@ -35,6 +35,13 @@ Run the project runner, located in the runner directory.
 ```shell
   allure generate .\allure-results --output .\allure-report --clean ; allure open --port 5000
 ```
+* Another option is in the root of the project to execute one of the following commands
+```shell
+mvn allure:report
+```
+```shell
+mvn allure:serve
+```
 
 # Framework YY description
 
