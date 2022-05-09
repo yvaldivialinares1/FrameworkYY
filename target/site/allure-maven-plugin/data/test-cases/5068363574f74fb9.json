@@ -1,0 +1,177 @@
+{
+  "uid" : "5068363574f74fb9",
+  "name" : "Update an existing pet",
+  "fullName" : "Manage pet API services: Update an existing pet",
+  "historyId" : "e4c10a4e597f4eadd69b594f7d57fb1",
+  "time" : {
+    "start" : 1652102084429,
+    "stop" : 1652102091426,
+    "duration" : 6997
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "Hooks.initDriver(Scenario)",
+    "time" : {
+      "start" : 1652102084429,
+      "stop" : 1652102088344,
+      "duration" : 3915
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given  Retrieve data from api services with path v2/pet from addPet.txt and save variables bellow",
+      "time" : {
+        "start" : 1652102088345,
+        "stop" : 1652102089256,
+        "duration" : 911
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "997f0979b641b64a",
+        "name" : "Data table",
+        "source" : "997f0979b641b64a.csv",
+        "type" : "text/tab-separated-values",
+        "size" : 9
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "When  Update an existing pet with path v2/pet from updateExistingPet.txt",
+      "time" : {
+        "start" : 1652102089256,
+        "stop" : 1652102090044,
+        "duration" : 788
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then  The service responds with status 200",
+      "time" : {
+        "start" : 1652102090044,
+        "stop" : 1652102090045,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "Hooks.embedScreenshot(Scenario)",
+    "time" : {
+      "start" : 1652102090045,
+      "stop" : 1652102091425,
+      "duration" : 1380
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b6fb3aec6506bb8d",
+      "name" : "Text output",
+      "source" : "b6fb3aec6506bb8d.txt",
+      "type" : "text/plain",
+      "size" : 20
+    }, {
+      "uid" : "2e71a087f2a27e9d",
+      "name" : "Text output",
+      "source" : "2e71a087f2a27e9d.txt",
+      "type" : "text/plain",
+      "size" : 26
+    }, {
+      "uid" : "469ef1bced45d0aa",
+      "name" : "Screenshot",
+      "source" : "469ef1bced45d0aa.png",
+      "type" : "image/png",
+      "size" : 4692
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "regression"
+  }, {
+    "name" : "tag",
+    "value" : "managePets"
+  }, {
+    "name" : "tag",
+    "value" : "updatePets"
+  }, {
+    "name" : "host",
+    "value" : "UY-IT01203"
+  }, {
+    "name" : "thread",
+    "value" : "47296@UY-IT01203.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Manage pet API services"
+  }, {
+    "name" : "story",
+    "value" : "Update an existing pet"
+  }, {
+    "name" : "suite",
+    "value" : "Manage pet API services"
+  }, {
+    "name" : "testClass",
+    "value" : "Update an existing pet"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "classpath:features/api/ManagePets.feature"
+  }, {
+    "name" : "package",
+    "value" : "features.api.ManagePets_feature.Manage pet API services"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "managePets", "regression", "updatePets" ]
+  },
+  "source" : "5068363574f74fb9.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,93 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Manage pet API services",
+    "children" : [ {
+      "name" : "Add Pet",
+      "uid" : "67ee79d607b9ed06",
+      "parentUid" : "7c8ab99b061209ee5746c2b8e13d4d73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652112126324,
+        "stop" : 1652112135636,
+        "duration" : 9312
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Find Pet by id",
+      "uid" : "71c7683a44a6305f",
+      "parentUid" : "7c8ab99b061209ee5746c2b8e13d4d73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652112135766,
+        "stop" : 1652112140899,
+        "duration" : 5133
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Update an existing pet",
+      "uid" : "95209a1ebbfc43f9",
+      "parentUid" : "7c8ab99b061209ee5746c2b8e13d4d73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652112140913,
+        "stop" : 1652112145977,
+        "duration" : 5064
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7c8ab99b061209ee5746c2b8e13d4d73"
+  }, {
+    "name" : "By Articles",
+    "children" : [ {
+      "name" : "To add a laptop to the shopping cart",
+      "uid" : "d6234c9b5608241",
+      "parentUid" : "a8ec55a7f434323e5e300618d6ad360e",
+      "status" : "broken",
+      "time" : {
+        "start" : 1652112145987,
+        "stop" : 1652112158966,
+        "duration" : 12979
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a8ec55a7f434323e5e300618d6ad360e"
+  }, {
+    "name" : "Login y Logout",
+    "children" : [ {
+      "name" : "Login Successful",
+      "uid" : "311d82c70173fc13",
+      "parentUid" : "9346e2826a6d1bff73a84eefff0c8c42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652112158980,
+        "stop" : 1652112171759,
+        "duration" : 12779
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9346e2826a6d1bff73a84eefff0c8c42"
+  }, {
+    "name" : "Register a user",
+    "children" : [ {
+      "name" : "Register a user Successful",
+      "uid" : "3ca93c292e1ad062",
+      "parentUid" : "58e4fafc59ef61bb4b5a139beffefa4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652112171766,
+        "stop" : 1652112180164,
+        "duration" : 8398
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "58e4fafc59ef61bb4b5a139beffefa4e"
+  } ]
+}

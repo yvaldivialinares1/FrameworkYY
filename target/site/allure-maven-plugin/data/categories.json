@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=101.0.4951.54)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'UY-IT01203', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\YAILIN~1.VAL\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3a2dc64f85aa566a5d81a84afb703690",
+      "children" : [ {
+        "name" : "To add a laptop to the shopping cart",
+        "uid" : "d6234c9b5608241",
+        "parentUid" : "52dfdb784db0b9857152ba2cbed94b1d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652112145987,
+          "stop" : 1652112158966,
+          "duration" : 12979
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "52dfdb784db0b9857152ba2cbed94b1d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

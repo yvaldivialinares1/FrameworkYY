@@ -1,0 +1,17 @@
+pages\BasePage.class
+pages\LoginPage.class
+steps\RegisterUserSteps.class
+steps\ManagePetsSteps.class
+pageObjects\BuyArticlesPageObject.class
+utils\RestAssuredExtension.class
+steps\BuyArticlesSteps.class
+runner\runner.class
+steps\Hooks.class
+pages\BuyArticlesPage.class
+pageObjects\LoginPageObject.class
+steps\LoginSteps.class
+utils\DataGenerator.class
+pages\ManagePetsPage.class
+pageObjects\ManagePetsPageObject.class
+pageObjects\RegisterUserPageObject.class
+pages\RegisterUserPage.class
