@@ -42,17 +42,6 @@ public class Hooks {
         "***********************************************************************************************************");
   }
 
-  //  @After
-  //  public void closeDriver() {
-  //    log.info(
-  //
-  // "***********************************************************************************************************");
-  //    log.info("[ Driver Status ] - Clean and close the intance of the driver");
-  //    log.info(
-  //
-  // "***********************************************************************************************************");
-  //    driver.quit();
-  //  }
   @After
   /** Embed a screenshot in test report if test is marked as failed */
   public void embedScreenshot(Scenario scenario) throws IOException {
