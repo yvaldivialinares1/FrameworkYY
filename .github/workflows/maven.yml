@@ -29,5 +29,6 @@ jobs:
       run: ls -a
       
     - name: what is in the targest folder
-      run: cd target
+      run: |
+           cd target
            ls -a
