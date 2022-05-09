@@ -6,7 +6,10 @@ import cucumber.api.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.io.IOException;
 import java.util.logging.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -39,8 +42,34 @@ public class Hooks {
         "***********************************************************************************************************");
   }
 
+  //  @After
+  //  public void closeDriver() {
+  //    log.info(
+  //
+  // "***********************************************************************************************************");
+  //    log.info("[ Driver Status ] - Clean and close the intance of the driver");
+  //    log.info(
+  //
+  // "***********************************************************************************************************");
+  //    driver.quit();
+  //  }
   @After
-  public void closeDriver() {
+  /** Embed a screenshot in test report if test is marked as failed */
+  public void embedScreenshot(Scenario scenario) throws IOException {
+
+    if (scenario.isFailed()) {
+      try {
+        scenario.write("The scenario failed.");
+        scenario.write("Current Page URL is " + driver.getCurrentUrl());
+        byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        String scenarioName = scenario.getName();
+        String screenShotPath = String.format("target/screenshots/%s/failed", scenarioName);
+        scenario.embed(screenshot, screenShotPath);
+      } catch (WebDriverException somePlatformsDontSupportScreenshots) {
+        System.err.println(somePlatformsDontSupportScreenshots.getMessage());
+      }
+    }
+
     log.info(
         "***********************************************************************************************************");
     log.info("[ Driver Status ] - Clean and close the intance of the driver");
