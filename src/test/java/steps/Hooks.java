@@ -12,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Hooks {
@@ -27,12 +29,16 @@ public class Hooks {
     log.info("[ Configuration ] - Initializing driver configuration");
     log.info(
         "***********************************************************************************************************");
-    WebDriverManager.chromedriver().setup();
-    ChromeOptions options = new ChromeOptions();
-    options.addArguments("--start-maximized");
-    options.addArguments("--window-size=1920, 1080");
-    options.addArguments("--disable-infobars");
-    driver = new ChromeDriver(options);
+//    WebDriverManager.chromedriver().setup();
+//    ChromeOptions options = new ChromeOptions();
+//    options.addArguments("--start-maximized");
+//    options.addArguments("--window-size=1920, 1080");
+//    options.addArguments("--disable-infobars");
+//    driver = new ChromeDriver(options);
+    WebDriverManager.firefoxdriver().setup();
+    FirefoxOptions options = new FirefoxOptions();
+    options.setHeadless(true);
+    driver = new FirefoxDriver(options);
     wait = new WebDriverWait(driver, 10);
     this.scenario = scenario;
     log.info(
