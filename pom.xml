@@ -17,9 +17,9 @@
         <guava.version>30.0-jre</guava.version>
         <log4j-core.version>2.14.0</log4j-core.version>
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
-<!--        <extentreports-cucumber6-adapter.version>2.1.0</extentreports-cucumber6-adapter.version>-->
+        <!--        <extentreports-cucumber6-adapter.version>2.1.0</extentreports-cucumber6-adapter.version>-->
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
-<!--        <extentreports.version>5.0.4</extentreports.version>-->
+        <!--        <extentreports.version>5.0.4</extentreports.version>-->
         <lombok.version>1.18.16</lombok.version>
         <testng.version>7.1.0</testng.version>
         <formatter.version>1.6</formatter.version>
@@ -177,13 +177,7 @@
         </dependency>
         <!-- End Tools-->
         <!-- Mobile -->
-        <dependency>
-            <groupId>io.appium</groupId>
-            <artifactId>java-client</artifactId>
-            <version>${appium.java-client.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- End Mobile -->
+
         <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer -->
         <dependency>
             <groupId>info.cukes</groupId>
@@ -240,7 +234,9 @@
                 <artifactId>allure-maven</artifactId>
                 <version>${allure.maven.version}</version>
                 <configuration>
-                    <allureDownloadUrl>https://github.com/allure-framework/allure2/releases/download/2.7.0/allure-2.7.0.zip</allureDownloadUrl>
+                    <allureDownloadUrl>
+                        https://github.com/allure-framework/allure2/releases/download/2.7.0/allure-2.7.0.zip
+                    </allureDownloadUrl>
                 </configuration>
                 <executions>
                     <execution>

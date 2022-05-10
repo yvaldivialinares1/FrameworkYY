@@ -1,7 +1,0 @@
-"Status","Name","Duration in ms","Description"
-"broken","By Articles: To add a laptop to the shopping cart","12979",""
-"passed","Register a user: Register a user Successful","8398",""
-"passed","Login y Logout: Login Successful","12779",""
-"passed","Manage pet API services: Add Pet","9312",""
-"passed","Manage pet API services: Find Pet by id","5133",""
-"passed","Manage pet API services: Update an existing pet","5064",""
