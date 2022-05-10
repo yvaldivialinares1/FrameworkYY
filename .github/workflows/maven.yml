@@ -22,22 +22,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+    - uses: browser-actions/setup-firefox@latest
+    - name: Setup Firefox
+      run: firefox --version
     - name: Build with Maven
-      run: mvn -B package --file pom.xml test
-      
-    - name: List the current directory
-      run: ls -a
-      
-    - name: what is in the targest folder
-      run: |
-           cd target
-           ls -a
-    
-    - name: Get Allure history
-      uses: actions/checkout@v3
-      if: always()
-      continue-on-error: true
-      with:
-        ref: gh-pages
-        path: gh-pages
-        
+      run: mvn -B package --file pom.xml
