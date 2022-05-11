@@ -28,7 +28,9 @@ jobs:
       run: firefox --version
          
     - name: Run Test
-      run: mvn -B package --file pom.xml
+      if: always()
+      run: mvn package
+      continue-on-error: true
       
     - name: Get Allure history
       uses: actions/checkout@v3
