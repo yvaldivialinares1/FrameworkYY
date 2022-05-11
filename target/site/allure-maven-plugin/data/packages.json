@@ -1,0 +1,177 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "runner.runner",
+    "children" : [ {
+      "name" : "runScenario",
+      "uid" : "e821a0ad101313c0",
+      "parentUid" : "b327ab676e524b9dc40a56aef38e66f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652302929422,
+        "stop" : 1652302944577,
+        "duration" : 15155
+      },
+      "flaky" : false,
+      "parameters" : [ "\"Add Pet\"", "\"Manage pet API services\"" ]
+    }, {
+      "name" : "runScenario",
+      "uid" : "888bc25363b335f2",
+      "parentUid" : "b327ab676e524b9dc40a56aef38e66f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652302944595,
+        "stop" : 1652302953830,
+        "duration" : 9235
+      },
+      "flaky" : false,
+      "parameters" : [ "\"Find Pet by id\"", "\"Manage pet API services\"" ]
+    }, {
+      "name" : "runScenario",
+      "uid" : "e6550b75b84ef301",
+      "parentUid" : "b327ab676e524b9dc40a56aef38e66f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652302953839,
+        "stop" : 1652302963499,
+        "duration" : 9660
+      },
+      "flaky" : false,
+      "parameters" : [ "\"Update an existing pet\"", "\"Manage pet API services\"" ]
+    }, {
+      "name" : "runScenario",
+      "uid" : "4467f59df449f474",
+      "parentUid" : "b327ab676e524b9dc40a56aef38e66f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652302963510,
+        "stop" : 1652302989045,
+        "duration" : 25535
+      },
+      "flaky" : false,
+      "parameters" : [ "\"To add a laptop to the shopping cart\"", "\"By Articles\"" ]
+    }, {
+      "name" : "runScenario",
+      "uid" : "9a8c955e79c39f65",
+      "parentUid" : "b327ab676e524b9dc40a56aef38e66f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652302989062,
+        "stop" : 1652303010461,
+        "duration" : 21399
+      },
+      "flaky" : false,
+      "parameters" : [ "\"Login Successful\"", "\"Login y Logout\"" ]
+    }, {
+      "name" : "runScenario",
+      "uid" : "66003de6bfc5a965",
+      "parentUid" : "b327ab676e524b9dc40a56aef38e66f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652303010476,
+        "stop" : 1652303026826,
+        "duration" : 16350
+      },
+      "flaky" : false,
+      "parameters" : [ "\"Register a user Successful\"", "\"Register a user\"" ]
+    } ],
+    "uid" : "runner.runner"
+  }, {
+    "name" : "features",
+    "children" : [ {
+      "name" : "api.ManagePets_feature.Manage pet API services",
+      "children" : [ {
+        "name" : "Add Pet",
+        "uid" : "85905787b1bbe2d7",
+        "parentUid" : "7ad6267d72bdbaec3716b6b2f144a1bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652302929743,
+          "stop" : 1652302944465,
+          "duration" : 14722
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Find Pet by id",
+        "uid" : "d8bf62fd7bf7dd00",
+        "parentUid" : "7ad6267d72bdbaec3716b6b2f144a1bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652302944597,
+          "stop" : 1652302953824,
+          "duration" : 9227
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Update an existing pet",
+        "uid" : "61aef563f78f40f9",
+        "parentUid" : "7ad6267d72bdbaec3716b6b2f144a1bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652302953842,
+          "stop" : 1652302963491,
+          "duration" : 9649
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "api.ManagePets_feature.Manage pet API services"
+    }, {
+      "name" : "web",
+      "children" : [ {
+        "name" : "BuyArticles_feature.By Articles",
+        "children" : [ {
+          "name" : "To add a laptop to the shopping cart",
+          "uid" : "e0e96870d526b57e",
+          "parentUid" : "96308db9fad98b642cb9ae0ae8e19ece",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652302963514,
+            "stop" : 1652302989032,
+            "duration" : 25518
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "BuyArticles_feature.By Articles"
+      }, {
+        "name" : "Login_feature.Login y Logout",
+        "children" : [ {
+          "name" : "Login Successful",
+          "uid" : "ae754f6606b7387c",
+          "parentUid" : "fe35a6164e49d4e6aca52715ca639da4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652302989067,
+            "stop" : 1652303010450,
+            "duration" : 21383
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "Login_feature.Login y Logout"
+      }, {
+        "name" : "RegisterUser_feature.Register a user",
+        "children" : [ {
+          "name" : "Register a user Successful",
+          "uid" : "66adb47298f19f93",
+          "parentUid" : "90c553dd37f9ae16a43d84e99e0c2109",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652303010485,
+            "stop" : 1652303026819,
+            "duration" : 16334
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "RegisterUser_feature.Register a user"
+      } ],
+      "uid" : "ccdac5b2323200b4f8e371abd3b531cd"
+    } ],
+    "uid" : "05c057f933be9add362d425b7a690409"
+  } ]
+}

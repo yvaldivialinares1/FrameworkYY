@@ -1,0 +1,189 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Runs Cucumber Scenarios",
+    "uid" : "e821a0ad101313c0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1652302929422,
+      "stop" : 1652302944577,
+      "duration" : 15155
+    },
+    "flaky" : false,
+    "parameters" : [ "\"Add Pet\"", "\"Manage pet API services\"" ]
+  }, {
+    "name" : "Manage pet API services",
+    "children" : [ {
+      "name" : "Add Pet",
+      "children" : [ {
+        "name" : "Add Pet",
+        "uid" : "85905787b1bbe2d7",
+        "parentUid" : "5c936e7a3105e2ac974c8e4411711d9e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652302929743,
+          "stop" : 1652302944465,
+          "duration" : 14722
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5c936e7a3105e2ac974c8e4411711d9e"
+    }, {
+      "name" : "Find Pet by id",
+      "children" : [ {
+        "name" : "Find Pet by id",
+        "uid" : "d8bf62fd7bf7dd00",
+        "parentUid" : "34ae731de3a7d311bfc57ca6896a68e4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652302944597,
+          "stop" : 1652302953824,
+          "duration" : 9227
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "34ae731de3a7d311bfc57ca6896a68e4"
+    }, {
+      "name" : "Update an existing pet",
+      "children" : [ {
+        "name" : "Update an existing pet",
+        "uid" : "61aef563f78f40f9",
+        "parentUid" : "e25849eff145278121bfb3d6f4ca8466",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652302953842,
+          "stop" : 1652302963491,
+          "duration" : 9649
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e25849eff145278121bfb3d6f4ca8466"
+    } ],
+    "uid" : "5f19093bb06159e33a467eff29caf512"
+  }, {
+    "name" : "Runs Cucumber Scenarios",
+    "uid" : "888bc25363b335f2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1652302944595,
+      "stop" : 1652302953830,
+      "duration" : 9235
+    },
+    "flaky" : false,
+    "parameters" : [ "\"Find Pet by id\"", "\"Manage pet API services\"" ]
+  }, {
+    "name" : "Runs Cucumber Scenarios",
+    "uid" : "e6550b75b84ef301",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1652302953839,
+      "stop" : 1652302963499,
+      "duration" : 9660
+    },
+    "flaky" : false,
+    "parameters" : [ "\"Update an existing pet\"", "\"Manage pet API services\"" ]
+  }, {
+    "name" : "Runs Cucumber Scenarios",
+    "uid" : "4467f59df449f474",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1652302963510,
+      "stop" : 1652302989045,
+      "duration" : 25535
+    },
+    "flaky" : false,
+    "parameters" : [ "\"To add a laptop to the shopping cart\"", "\"By Articles\"" ]
+  }, {
+    "name" : "By Articles",
+    "children" : [ {
+      "name" : "To add a laptop to the shopping cart",
+      "children" : [ {
+        "name" : "To add a laptop to the shopping cart",
+        "uid" : "e0e96870d526b57e",
+        "parentUid" : "98ff84f2144060c67c398c003aa44130",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652302963514,
+          "stop" : 1652302989032,
+          "duration" : 25518
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "98ff84f2144060c67c398c003aa44130"
+    } ],
+    "uid" : "534efa551c9dde3a81fb389addba55a9"
+  }, {
+    "name" : "Runs Cucumber Scenarios",
+    "uid" : "9a8c955e79c39f65",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1652302989062,
+      "stop" : 1652303010461,
+      "duration" : 21399
+    },
+    "flaky" : false,
+    "parameters" : [ "\"Login Successful\"", "\"Login y Logout\"" ]
+  }, {
+    "name" : "Login y Logout",
+    "children" : [ {
+      "name" : "Login Successful",
+      "children" : [ {
+        "name" : "Login Successful",
+        "uid" : "ae754f6606b7387c",
+        "parentUid" : "20fb5cf822c98b2a30b86db19e2a8dbd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652302989067,
+          "stop" : 1652303010450,
+          "duration" : 21383
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "20fb5cf822c98b2a30b86db19e2a8dbd"
+    } ],
+    "uid" : "d7c87b360c764991737e50249461062f"
+  }, {
+    "name" : "Runs Cucumber Scenarios",
+    "uid" : "66003de6bfc5a965",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1652303010476,
+      "stop" : 1652303026826,
+      "duration" : 16350
+    },
+    "flaky" : false,
+    "parameters" : [ "\"Register a user Successful\"", "\"Register a user\"" ]
+  }, {
+    "name" : "Register a user",
+    "children" : [ {
+      "name" : "Register a user Successful",
+      "children" : [ {
+        "name" : "Register a user Successful",
+        "uid" : "66adb47298f19f93",
+        "parentUid" : "1657e58fb98cc2e52dd7adf3b44fcd92",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652303010485,
+          "stop" : 1652303026819,
+          "duration" : 16334
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1657e58fb98cc2e52dd7adf3b44fcd92"
+    } ],
+    "uid" : "0395e68cf946ae98f1e5c9ac71a4b57c"
+  } ]
+}

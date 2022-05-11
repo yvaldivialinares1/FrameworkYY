@@ -37,6 +37,7 @@ public class Hooks {
     FirefoxOptions options = new FirefoxOptions();
     options.setHeadless(true);
     driver = new FirefoxDriver(options);
+
     wait = new WebDriverWait(driver, 10);
     this.scenario = scenario;
     log.info(
