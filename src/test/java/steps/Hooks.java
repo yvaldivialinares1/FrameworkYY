@@ -33,6 +33,7 @@ public class Hooks {
     //    options.addArguments("--window-size=1920, 1080");
     //    options.addArguments("--disable-infobars");
     //    driver = new ChromeDriver(options);
+
     WebDriverManager.firefoxdriver().setup();
     FirefoxOptions options = new FirefoxOptions();
     options.setHeadless(true);
