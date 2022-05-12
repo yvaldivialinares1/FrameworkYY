@@ -39,7 +39,7 @@ jobs:
       with:
          ref: ${{ github.event.pull_request.head.ref }}
          path: gh-pages
-    
+
     - name: Allure Report action from marketplace
       uses: simple-elf/allure-report-action@master
       if: always()

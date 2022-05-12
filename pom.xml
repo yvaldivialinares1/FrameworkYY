@@ -257,7 +257,7 @@
                         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
                     </systemPropertyVariables>
                     <includes>
-                        <include>*/runner.java</include>
+                        <include>*/TestRunner.java</include>
                         <include>**/RunTest.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>

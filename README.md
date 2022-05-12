@@ -51,7 +51,7 @@ The framework follows the *Page Object Model*. The structure of the framework is
 
 - **PageObjects**, *contains the objects* that will be used in the Page classes, this is used in the *initialization* of the *Page classes* by the
 - **pages**, contains *the pages themselves*, these classes define *all the selenium web driver code needed to work within a web page application*, this is the correspondence to reality.
-- **runner**: contains the cucumber runner class so far.
+- **runner**: contains the cucumber TestRunner class so far.
 - **steps**: contains the *classes that work with the Gherkin language* defined in the steps for the scenarios in the *features file*...
     - **Note:** **Hooks.class** to manage, initialise and close the webDriver. The Hooks.class driver is called in the constructor of **BasePage.class**.
 - **utils**: contains the utility or *help classes for some functionality of the project*, e.g. *DataGenerator* and *RestAssuredExtension*.
