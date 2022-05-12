@@ -3,7 +3,7 @@ package steps;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import java.util.List;
-import org.junit.Assert;
+import org.testng.Assert;
 import pages.ManagePetsPage;
 
 public class ManagePetsSteps {

@@ -1,60 +1,60 @@
 [ {
-  "uid" : "25c29e9327275a4",
+  "uid" : "7ae8e33c1c2079d9",
   "name" : "Login Successful",
   "time" : {
-    "start" : 1652366198489,
-    "stop" : 1652366217263,
-    "duration" : 18774
+    "start" : 1652370264115,
+    "stop" : 1652370283027,
+    "duration" : 18912
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "238cfc07751512cc",
+  "uid" : "9d0ccba44b2ac55c",
   "name" : "Find Pet by id",
   "time" : {
-    "start" : 1652366159746,
-    "stop" : 1652366168384,
-    "duration" : 8638
+    "start" : 1652370225571,
+    "stop" : 1652370234774,
+    "duration" : 9203
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "96440c8716065c18",
-  "name" : "Register a user Successful",
-  "time" : {
-    "start" : 1652366217278,
-    "stop" : 1652366232456,
-    "duration" : 15178
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1fc3c7d5e88c8d1a",
-  "name" : "To add a laptop to the shopping cart",
-  "time" : {
-    "start" : 1652366177490,
-    "stop" : 1652366198476,
-    "duration" : 20986
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b3aaea8cd2962e98",
+  "uid" : "dee2d445d2e60ee8",
   "name" : "Update an existing pet",
   "time" : {
-    "start" : 1652366168397,
-    "stop" : 1652366177471,
-    "duration" : 9074
+    "start" : 1652370234786,
+    "stop" : 1652370243778,
+    "duration" : 8992
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e20b4166eeabf3ee",
+  "uid" : "4e9195a5303cc2e4",
+  "name" : "To add a laptop to the shopping cart",
+  "time" : {
+    "start" : 1652370243802,
+    "stop" : 1652370264102,
+    "duration" : 20300
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "553837d1c5911314",
+  "name" : "Register a user Successful",
+  "time" : {
+    "start" : 1652370283040,
+    "stop" : 1652370297585,
+    "duration" : 14545
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b53ca6e3d71bc64",
   "name" : "Add Pet",
   "time" : {
-    "start" : 1652366142818,
-    "stop" : 1652366159576,
-    "duration" : 16758
+    "start" : 1652370210059,
+    "stop" : 1652370225466,
+    "duration" : 15407
   },
   "status" : "passed",
   "severity" : "normal"

@@ -2,7 +2,7 @@ package steps;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import org.junit.Assert;
+import org.testng.Assert;
 import pages.LoginPage;
 
 public class LoginSteps {
