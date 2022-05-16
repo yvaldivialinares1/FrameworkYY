@@ -1,0 +1,246 @@
+{
+  "8cf3206b7f71cf07250c86b14155c0e9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "da9c0b93d1b4d17b",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/da9c0b93d1b4d17b",
+      "status" : "broken",
+      "statusDetails" : "Unable to locate element: #nameofuser\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az39-526', ip: '10.1.0.245', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-1022-azure', java.version: '11.0.15'\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220513165813, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:processID: 3297, moz:profile: /tmp/rust_mozprofileG9MkaM, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.13.0-1022-azure, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 62199091-c95e-415f-839d-1b32fe21622d\n*** Element info: {Using=id, value=nameofuser}",
+      "time" : {
+        "start" : 1652727421289,
+        "stop" : 1652727428003,
+        "duration" : 6714
+      }
+    } ]
+  },
+  "716cca549151dc02c94a1cea1d4a2d6f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d1adb276f8cc4993",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/d1adb276f8cc4993",
+      "status" : "broken",
+      "statusDetails" : "The element reference of <h4 class=\"card-title\"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az39-526', ip: '10.1.0.245', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-1022-azure', java.version: '11.0.15'\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220513165813, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:processID: 3044, moz:profile: /tmp/rust_mozprofile0Sl6MF, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.13.0-1022-azure, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 510b2799-7660-4715-becc-adaee8f55517",
+      "time" : {
+        "start" : 1652727413912,
+        "stop" : 1652727421281,
+        "duration" : 7369
+      }
+    } ]
+  },
+  "afc75585a6d031214042915858fb44f2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b474b9c12e7d0656",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/b474b9c12e7d0656",
+      "status" : "broken",
+      "statusDetails" : "Unable to locate element: #nameofuser\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az39-526', ip: '10.1.0.245', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-1022-azure', java.version: '11.0.15'\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220513165813, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:processID: 3297, moz:profile: /tmp/rust_mozprofileG9MkaM, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.13.0-1022-azure, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 62199091-c95e-415f-839d-1b32fe21622d\n*** Element info: {Using=id, value=nameofuser}",
+      "time" : {
+        "start" : 1652727421287,
+        "stop" : 1652727428005,
+        "duration" : 6718
+      }
+    } ]
+  },
+  "e4c10a4e597f4eadd69b594f7d57fb1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "77fde2e964bf64c7",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/77fde2e964bf64c7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727410951,
+        "stop" : 1652727413884,
+        "duration" : 2933
+      }
+    } ]
+  },
+  "1745ee8d6df98f14b95e09d77f55ab66" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "36a2df07c5a1a78f",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/36a2df07c5a1a78f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727428010,
+        "stop" : 1652727433086,
+        "duration" : 5076
+      }
+    } ]
+  },
+  "f222da40dfafde3076632048df2d082b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "823a551a96b3ae1c",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/823a551a96b3ae1c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727399120,
+        "stop" : 1652727407780,
+        "duration" : 8660
+      }
+    } ]
+  },
+  "38cc4d02a1cb5b73be06b75b02537336" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6489e72ac6fe7478",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/6489e72ac6fe7478",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727428008,
+        "stop" : 1652727433087,
+        "duration" : 5079
+      }
+    } ]
+  },
+  "20714676925244b73b24d64d6aeed483" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5d6d18401e89e172",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/5d6d18401e89e172",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727410948,
+        "stop" : 1652727413888,
+        "duration" : 2940
+      }
+    } ]
+  },
+  "590133888251fcf4132b5cd1ce480df0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fdb16132a6cec37c",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/fdb16132a6cec37c",
+      "status" : "broken",
+      "statusDetails" : "The element reference of <h4 class=\"card-title\"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az39-526', ip: '10.1.0.245', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-1022-azure', java.version: '11.0.15'\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220513165813, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:processID: 3044, moz:profile: /tmp/rust_mozprofile0Sl6MF, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.13.0-1022-azure, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 510b2799-7660-4715-becc-adaee8f55517",
+      "time" : {
+        "start" : 1652727413917,
+        "stop" : 1652727421276,
+        "duration" : 7359
+      }
+    } ]
+  },
+  "dc45c236f9ea4acbdb96b1bbe72b9f8e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9fef20a67ed4aa05",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/9fef20a67ed4aa05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727398886,
+        "stop" : 1652727407856,
+        "duration" : 8970
+      }
+    } ]
+  },
+  "77dd8021998772dfa1047c49dbb15bee" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e1cae9d47d3bcc9d",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/e1cae9d47d3bcc9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727407869,
+        "stop" : 1652727410936,
+        "duration" : 3067
+      }
+    } ]
+  },
+  "a5f0f44ed87ae5de5bc96cd17478a64d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a3e7ae0872ff4c7b",
+      "reportUrl" : "https://yvaldivialinares1.github.io/FrameworkYY/65//#testresult/a3e7ae0872ff4c7b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727407867,
+        "stop" : 1652727410938,
+        "duration" : 3071
+      }
+    } ]
+  }
+}

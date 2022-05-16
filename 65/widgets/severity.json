@@ -1,0 +1,121 @@
+[ {
+  "uid" : "823a551a96b3ae1c",
+  "name" : "Add Pet",
+  "time" : {
+    "start" : 1652727399120,
+    "stop" : 1652727407780,
+    "duration" : 8660
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3e7ae0872ff4c7b",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1652727407867,
+    "stop" : 1652727410938,
+    "duration" : 3071
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1adb276f8cc4993",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1652727413912,
+    "stop" : 1652727421281,
+    "duration" : 7369
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "36a2df07c5a1a78f",
+  "name" : "Register a user Successful",
+  "time" : {
+    "start" : 1652727428010,
+    "stop" : 1652727433086,
+    "duration" : 5076
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d6d18401e89e172",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1652727410948,
+    "stop" : 1652727413888,
+    "duration" : 2940
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1cae9d47d3bcc9d",
+  "name" : "Find Pet by id",
+  "time" : {
+    "start" : 1652727407869,
+    "stop" : 1652727410936,
+    "duration" : 3067
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fdb16132a6cec37c",
+  "name" : "To add a laptop to the shopping cart",
+  "time" : {
+    "start" : 1652727413917,
+    "stop" : 1652727421276,
+    "duration" : 7359
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "9fef20a67ed4aa05",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1652727398886,
+    "stop" : 1652727407856,
+    "duration" : 8970
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da9c0b93d1b4d17b",
+  "name" : "Login Successful",
+  "time" : {
+    "start" : 1652727421289,
+    "stop" : 1652727428003,
+    "duration" : 6714
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "77fde2e964bf64c7",
+  "name" : "Update an existing pet",
+  "time" : {
+    "start" : 1652727410951,
+    "stop" : 1652727413884,
+    "duration" : 2933
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b474b9c12e7d0656",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1652727421287,
+    "stop" : 1652727428005,
+    "duration" : 6718
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6489e72ac6fe7478",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1652727428008,
+    "stop" : 1652727433087,
+    "duration" : 5079
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,189 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Test Suite",
+    "children" : [ {
+      "name" : "Regression Test",
+      "children" : [ {
+        "name" : "runner.TestRunner",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "9fef20a67ed4aa05",
+          "parentUid" : "cdfe53769a7b9f97281691e36ed1b590",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652727398886,
+            "stop" : 1652727407856,
+            "duration" : 8970
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Add Pet\"", "\"Manage pet API services\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "a3e7ae0872ff4c7b",
+          "parentUid" : "cdfe53769a7b9f97281691e36ed1b590",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652727407867,
+            "stop" : 1652727410938,
+            "duration" : 3071
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Find Pet by id\"", "\"Manage pet API services\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "5d6d18401e89e172",
+          "parentUid" : "cdfe53769a7b9f97281691e36ed1b590",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652727410948,
+            "stop" : 1652727413888,
+            "duration" : 2940
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Update an existing pet\"", "\"Manage pet API services\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "d1adb276f8cc4993",
+          "parentUid" : "cdfe53769a7b9f97281691e36ed1b590",
+          "status" : "broken",
+          "time" : {
+            "start" : 1652727413912,
+            "stop" : 1652727421281,
+            "duration" : 7369
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"To add a laptop to the shopping cart\"", "\"By Articles\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "b474b9c12e7d0656",
+          "parentUid" : "cdfe53769a7b9f97281691e36ed1b590",
+          "status" : "broken",
+          "time" : {
+            "start" : 1652727421287,
+            "stop" : 1652727428005,
+            "duration" : 6718
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Login Successful\"", "\"Login y Logout\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "6489e72ac6fe7478",
+          "parentUid" : "cdfe53769a7b9f97281691e36ed1b590",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652727428008,
+            "stop" : 1652727433087,
+            "duration" : 5079
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Register a user Successful\"", "\"Register a user\"" ]
+        } ],
+        "uid" : "cdfe53769a7b9f97281691e36ed1b590"
+      } ],
+      "uid" : "2bf531d4cf31baae4bf6ea2ba606b18f"
+    } ],
+    "uid" : "70f4612f25dd624e3fa5910864552138"
+  }, {
+    "name" : "Manage pet API services",
+    "children" : [ {
+      "name" : "Add Pet",
+      "uid" : "823a551a96b3ae1c",
+      "parentUid" : "7c8ab99b061209ee5746c2b8e13d4d73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727399120,
+        "stop" : 1652727407780,
+        "duration" : 8660
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Find Pet by id",
+      "uid" : "e1cae9d47d3bcc9d",
+      "parentUid" : "7c8ab99b061209ee5746c2b8e13d4d73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727407869,
+        "stop" : 1652727410936,
+        "duration" : 3067
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Update an existing pet",
+      "uid" : "77fde2e964bf64c7",
+      "parentUid" : "7c8ab99b061209ee5746c2b8e13d4d73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727410951,
+        "stop" : 1652727413884,
+        "duration" : 2933
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7c8ab99b061209ee5746c2b8e13d4d73"
+  }, {
+    "name" : "By Articles",
+    "children" : [ {
+      "name" : "To add a laptop to the shopping cart",
+      "uid" : "fdb16132a6cec37c",
+      "parentUid" : "a8ec55a7f434323e5e300618d6ad360e",
+      "status" : "broken",
+      "time" : {
+        "start" : 1652727413917,
+        "stop" : 1652727421276,
+        "duration" : 7359
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a8ec55a7f434323e5e300618d6ad360e"
+  }, {
+    "name" : "Login y Logout",
+    "children" : [ {
+      "name" : "Login Successful",
+      "uid" : "da9c0b93d1b4d17b",
+      "parentUid" : "9346e2826a6d1bff73a84eefff0c8c42",
+      "status" : "broken",
+      "time" : {
+        "start" : 1652727421289,
+        "stop" : 1652727428003,
+        "duration" : 6714
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9346e2826a6d1bff73a84eefff0c8c42"
+  }, {
+    "name" : "Register a user",
+    "children" : [ {
+      "name" : "Register a user Successful",
+      "uid" : "36a2df07c5a1a78f",
+      "parentUid" : "58e4fafc59ef61bb4b5a139beffefa4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652727428010,
+        "stop" : 1652727433086,
+        "duration" : 5076
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "58e4fafc59ef61bb4b5a139beffefa4e"
+  } ],
+  "name" : "suites"
+}

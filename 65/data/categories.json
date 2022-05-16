@@ -1,0 +1,69 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "The element reference of <h4 class=\"card-title\"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az39-526', ip: '10.1.0.245', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-1022-azure', java.version: '11.0.15'\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220513165813, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:processID: 3044, moz:profile: /tmp/rust_mozprofile0Sl6MF, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.13.0-1022-azure, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 510b2799-7660-4715-becc-adaee8f55517",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "d1adb276f8cc4993",
+        "parentUid" : "aaa84a3d1c7d16bdfd20740d08feac03",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652727413912,
+          "stop" : 1652727421281,
+          "duration" : 7369
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"To add a laptop to the shopping cart\"", "\"By Articles\"" ]
+      }, {
+        "name" : "To add a laptop to the shopping cart",
+        "uid" : "fdb16132a6cec37c",
+        "parentUid" : "aaa84a3d1c7d16bdfd20740d08feac03",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652727413917,
+          "stop" : 1652727421276,
+          "duration" : 7359
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aaa84a3d1c7d16bdfd20740d08feac03"
+    }, {
+      "name" : "Unable to locate element: #nameofuser\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az39-526', ip: '10.1.0.245', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-1022-azure', java.version: '11.0.15'\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220513165813, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:processID: 3297, moz:profile: /tmp/rust_mozprofileG9MkaM, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.13.0-1022-azure, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 62199091-c95e-415f-839d-1b32fe21622d\n*** Element info: {Using=id, value=nameofuser}",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "b474b9c12e7d0656",
+        "parentUid" : "e6107782eb34eda8440ca971decba32e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652727421287,
+          "stop" : 1652727428005,
+          "duration" : 6718
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"Login Successful\"", "\"Login y Logout\"" ]
+      }, {
+        "name" : "Login Successful",
+        "uid" : "da9c0b93d1b4d17b",
+        "parentUid" : "e6107782eb34eda8440ca971decba32e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652727421289,
+          "stop" : 1652727428003,
+          "duration" : 6714
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e6107782eb34eda8440ca971decba32e"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
