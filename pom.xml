@@ -25,7 +25,6 @@
         <formatter.version>1.6</formatter.version>
         <rest-assured-version>4.1.2</rest-assured-version>
         <allure.cucumber4.version>2.13.2</allure.cucumber4.version>
-        <allure-testng-version>2.13.2</allure-testng-version>
         <allure.maven.version>2.10.0</allure.maven.version>
         <aspectj.version>1.9.6</aspectj.version>
     </properties>
@@ -151,12 +150,6 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-cucumber4-jvm</artifactId>
             <version>${allure.cucumber4.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-testng</artifactId>
-            <version>${allure-testng-version}</version>
-            <scope>test</scope>
         </dependency>
         <!-- End Reported Allure-->
         <dependency>
