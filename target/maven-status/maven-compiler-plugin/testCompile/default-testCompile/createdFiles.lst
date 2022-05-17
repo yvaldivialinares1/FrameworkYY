@@ -5,7 +5,6 @@ steps\ManagePetsSteps.class
 pageObjects\BuyArticlesPageObject.class
 utils\RestAssuredExtension.class
 steps\BuyArticlesSteps.class
-runner\runner.class
 steps\Hooks.class
 pages\BuyArticlesPage.class
 pageObjects\LoginPageObject.class
@@ -15,3 +14,4 @@ pages\ManagePetsPage.class
 pageObjects\ManagePetsPageObject.class
 pageObjects\RegisterUserPageObject.class
 pages\RegisterUserPage.class
+runner\TestRunner.class

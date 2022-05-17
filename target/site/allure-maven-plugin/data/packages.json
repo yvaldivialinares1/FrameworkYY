@@ -1,42 +1,43 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
   "children" : [ {
     "name" : "features",
     "children" : [ {
       "name" : "api.ManagePets_feature.Manage pet API services",
       "children" : [ {
         "name" : "Add Pet",
-        "uid" : "e20b4166eeabf3ee",
+        "uid" : "a36deaf841244c54",
         "parentUid" : "7ad6267d72bdbaec3716b6b2f144a1bc",
         "status" : "passed",
         "time" : {
-          "start" : 1652366142818,
-          "stop" : 1652366159576,
-          "duration" : 16758
+          "start" : 1652794802968,
+          "stop" : 1652794822619,
+          "duration" : 19651
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "Find Pet by id",
-        "uid" : "238cfc07751512cc",
+        "uid" : "7b42472b2b17338",
         "parentUid" : "7ad6267d72bdbaec3716b6b2f144a1bc",
         "status" : "passed",
         "time" : {
-          "start" : 1652366159746,
-          "stop" : 1652366168384,
-          "duration" : 8638
+          "start" : 1652794822741,
+          "stop" : 1652794830947,
+          "duration" : 8206
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "Update an existing pet",
-        "uid" : "b3aaea8cd2962e98",
+        "uid" : "34611d238948881b",
         "parentUid" : "7ad6267d72bdbaec3716b6b2f144a1bc",
         "status" : "passed",
         "time" : {
-          "start" : 1652366168397,
-          "stop" : 1652366177471,
-          "duration" : 9074
+          "start" : 1652794830962,
+          "stop" : 1652794839675,
+          "duration" : 8713
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -48,13 +49,13 @@
         "name" : "BuyArticles_feature.By Articles",
         "children" : [ {
           "name" : "To add a laptop to the shopping cart",
-          "uid" : "1fc3c7d5e88c8d1a",
+          "uid" : "888a0b53b9c9d962",
           "parentUid" : "96308db9fad98b642cb9ae0ae8e19ece",
           "status" : "passed",
           "time" : {
-            "start" : 1652366177490,
-            "stop" : 1652366198476,
-            "duration" : 20986
+            "start" : 1652794839691,
+            "stop" : 1652794862244,
+            "duration" : 22553
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -64,13 +65,13 @@
         "name" : "Login_feature.Login y Logout",
         "children" : [ {
           "name" : "Login Successful",
-          "uid" : "25c29e9327275a4",
+          "uid" : "ac4c68568fe8a345",
           "parentUid" : "fe35a6164e49d4e6aca52715ca639da4",
           "status" : "passed",
           "time" : {
-            "start" : 1652366198489,
-            "stop" : 1652366217263,
-            "duration" : 18774
+            "start" : 1652794862258,
+            "stop" : 1652794879410,
+            "duration" : 17152
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -80,13 +81,13 @@
         "name" : "RegisterUser_feature.Register a user",
         "children" : [ {
           "name" : "Register a user Successful",
-          "uid" : "96440c8716065c18",
+          "uid" : "caf351b7b2bca40",
           "parentUid" : "90c553dd37f9ae16a43d84e99e0c2109",
           "status" : "passed",
           "time" : {
-            "start" : 1652366217278,
-            "stop" : 1652366232456,
-            "duration" : 15178
+            "start" : 1652794879418,
+            "stop" : 1652794892404,
+            "duration" : 12986
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -96,6 +97,5 @@
       "uid" : "ccdac5b2323200b4f8e371abd3b531cd"
     } ],
     "uid" : "05c057f933be9add362d425b7a690409"
-  } ],
-  "name" : "packages"
+  } ]
 }

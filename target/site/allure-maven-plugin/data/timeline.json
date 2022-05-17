@@ -1,85 +1,85 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
   "children" : [ {
     "name" : "UY-IT01203",
     "children" : [ {
-      "name" : "72200@UY-IT01203.main(1)",
+      "name" : "30712@UY-IT01203.main(1)",
       "children" : [ {
-        "name" : "To add a laptop to the shopping cart",
-        "uid" : "1fc3c7d5e88c8d1a",
-        "parentUid" : "ef304558b952c3f5730481a27c4eb447",
-        "status" : "passed",
-        "time" : {
-          "start" : 1652366177490,
-          "stop" : 1652366198476,
-          "duration" : 20986
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Update an existing pet",
-        "uid" : "b3aaea8cd2962e98",
-        "parentUid" : "ef304558b952c3f5730481a27c4eb447",
-        "status" : "passed",
-        "time" : {
-          "start" : 1652366168397,
-          "stop" : 1652366177471,
-          "duration" : 9074
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Find Pet by id",
-        "uid" : "238cfc07751512cc",
-        "parentUid" : "ef304558b952c3f5730481a27c4eb447",
-        "status" : "passed",
-        "time" : {
-          "start" : 1652366159746,
-          "stop" : 1652366168384,
-          "duration" : 8638
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Add Pet",
-        "uid" : "e20b4166eeabf3ee",
-        "parentUid" : "ef304558b952c3f5730481a27c4eb447",
+        "uid" : "a36deaf841244c54",
+        "parentUid" : "88373735aabf36f99652a1d614a0cc09",
         "status" : "passed",
         "time" : {
-          "start" : 1652366142818,
-          "stop" : 1652366159576,
-          "duration" : 16758
+          "start" : 1652794802968,
+          "stop" : 1652794822619,
+          "duration" : 19651
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "Register a user Successful",
-        "uid" : "96440c8716065c18",
-        "parentUid" : "ef304558b952c3f5730481a27c4eb447",
+        "uid" : "caf351b7b2bca40",
+        "parentUid" : "88373735aabf36f99652a1d614a0cc09",
         "status" : "passed",
         "time" : {
-          "start" : 1652366217278,
-          "stop" : 1652366232456,
-          "duration" : 15178
+          "start" : 1652794879418,
+          "stop" : 1652794892404,
+          "duration" : 12986
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Update an existing pet",
+        "uid" : "34611d238948881b",
+        "parentUid" : "88373735aabf36f99652a1d614a0cc09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652794830962,
+          "stop" : 1652794839675,
+          "duration" : 8713
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "Login Successful",
-        "uid" : "25c29e9327275a4",
-        "parentUid" : "ef304558b952c3f5730481a27c4eb447",
+        "uid" : "ac4c68568fe8a345",
+        "parentUid" : "88373735aabf36f99652a1d614a0cc09",
         "status" : "passed",
         "time" : {
-          "start" : 1652366198489,
-          "stop" : 1652366217263,
-          "duration" : 18774
+          "start" : 1652794862258,
+          "stop" : 1652794879410,
+          "duration" : 17152
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "To add a laptop to the shopping cart",
+        "uid" : "888a0b53b9c9d962",
+        "parentUid" : "88373735aabf36f99652a1d614a0cc09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652794839691,
+          "stop" : 1652794862244,
+          "duration" : 22553
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Find Pet by id",
+        "uid" : "7b42472b2b17338",
+        "parentUid" : "88373735aabf36f99652a1d614a0cc09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652794822741,
+          "stop" : 1652794830947,
+          "duration" : 8206
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ef304558b952c3f5730481a27c4eb447"
+      "uid" : "88373735aabf36f99652a1d614a0cc09"
     } ],
     "uid" : "0d2c81d88a1f5e056892b2b8f156ca58"
-  } ],
-  "name" : "timeline"
+  } ]
 }

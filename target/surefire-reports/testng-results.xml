@@ -1,11 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="90357" started-at="2022-05-12T11:35:42 UYT" finished-at="2022-05-12T11:37:12 UYT">
+  <suite name="Test Suite" duration-ms="90099" started-at="2022-05-17T10:40:02 UYT" finished-at="2022-05-17T10:41:32 UYT">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@17d677df]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="90357" started-at="2022-05-12T11:35:42 UYT" finished-at="2022-05-12T11:37:12 UYT">
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    <test name="Regression Test" duration-ms="90099" started-at="2022-05-17T10:40:02 UYT" finished-at="2022-05-17T10:41:32 UYT">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@17d677df]" name="setUpClass" is-config="true" duration-ms="286" started-at="2022-05-17T10:40:02 UYT" finished-at="2022-05-17T10:40:02 UYT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@17d677df]" name="runScenario" duration-ms="20059" started-at="2022-05-17T10:40:02 UYT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-17T10:40:22 UYT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add Pet"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Manage pet API services"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@17d677df]" name="runScenario" duration-ms="8221" started-at="2022-05-17T10:40:22 UYT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-17T10:40:30 UYT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Find Pet by id"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Manage pet API services"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@17d677df]" name="runScenario" duration-ms="8725" started-at="2022-05-17T10:40:30 UYT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-17T10:40:39 UYT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Update an existing pet"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Manage pet API services"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@17d677df]" name="runScenario" duration-ms="22570" started-at="2022-05-17T10:40:39 UYT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-17T10:41:02 UYT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To add a laptop to the shopping cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["By Articles"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@17d677df]" name="runScenario" duration-ms="17159" started-at="2022-05-17T10:41:02 UYT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-17T10:41:19 UYT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login Successful"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login y Logout"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@17d677df]" name="runScenario" duration-ms="12999" started-at="2022-05-17T10:41:19 UYT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-17T10:41:32 UYT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register a user Successful"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register a user"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@17d677df]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2022-05-17T10:41:32 UYT" finished-at="2022-05-17T10:41:32 UYT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- Test Suite -->
 </testng-results>
