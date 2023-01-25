@@ -22,6 +22,10 @@ jobs:
      - uses: browser-actions/setup-chrome@latest
      - name: Install Chrome Browser
        run: chrome --version
+       
+     - uses: browser-actions/setup-edge@latest
+     - name: Install Edge Browser
+       run: edge --version
 
      - uses: actions/checkout@v3
      - name: Set up JDK 11
