@@ -171,12 +171,19 @@ public class BasePage {
         }
         return key;
     }
+
     @Attachment(value = "screenshot_error", type = "image/png")
     public byte[] getByteScreenshot() throws IOException {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         byte[] fileContent = FileUtils.readFileToByteArray(src);
 
         return fileContent;
+    }
+
+    public void scrollElementIntoView(By locator) {
+        WebElement element = driver.findElement(locator);
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].scrollIntoView();", element);
     }
 
 }

@@ -49,7 +49,8 @@ public class RegisterUserPage extends BasePage {
                 element = BuyArticlesPageObject.CART_BUTTON;
                 break;
         }
-        waitVisibility(element,"2");
+        waitVisibility(element,"5");
+        scrollElementIntoView(element);
         clickElement(element);
     }
 
