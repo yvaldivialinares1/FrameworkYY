@@ -2,6 +2,8 @@ package pages;
 
 import io.cucumber.datatable.DataTable;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Collections;
 import java.util.HashMap;
@@ -10,6 +12,8 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 
+import io.qameta.allure.Attachment;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -41,7 +45,7 @@ public class BasePage {
             time = 10;
         }
         try {
-            WebDriverWait wait = new WebDriverWait(driver, time);
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
             wait.until(ExpectedConditions.visibilityOfElementLocated(by));
             wait.until(ExpectedConditions.elementToBeClickable(by));
             return true;
@@ -167,4 +171,12 @@ public class BasePage {
         }
         return key;
     }
+    @Attachment(value = "screenshot_error", type = "image/png")
+    public byte[] getByteScreenshot() throws IOException {
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        byte[] fileContent = FileUtils.readFileToByteArray(src);
+
+        return fileContent;
+    }
+
 }

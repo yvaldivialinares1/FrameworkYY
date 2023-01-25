@@ -24,7 +24,23 @@
 
 
 ## Running the stories
-Run the project runner, located in the runner directory.
+This will run the build and (after a minute or so) will open the application in the web and execute the test:
+
+```shell
+ mvn clean test
+```
+
+This will run a single story by tag
+
+```shell
+ mvn clean test -Dcucumber.filter.tags="@login"
+```
+
+This will run a suite based on the tags in the story files:
+
+```shell
+ mvn clean test -Dcucumber.filter.tags="@regression"
+```
 
 ## Viewing the results
 
@@ -75,5 +91,4 @@ The framework follows the *Page Object Model*. The structure of the framework is
    * **WebDriverConfigProperties.class**, 
 
 to initialise and consume from **application.properties**
-5. Migrating to **TestNG** and using the **Cucumber SprintBoot dependency**
 6. Add in the **Hooks.class** the **method takeScreenshot** for the report.
