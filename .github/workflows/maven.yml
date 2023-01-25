@@ -16,18 +16,9 @@ jobs:
 
     steps:
      - uses: browser-actions/setup-firefox@latest
-     - name: Install Firefox Browser
+     - name: Install Firefox
        run: firefox --version
 
-     - uses: browser-actions/setup-chrome@latest
-     - name: Install Chrome Browser
-       run: chrome --version
-     - name: Install Edge Browser
-       run: |
-         wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft.gpg
-         sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge.list'
-         sudo apt update
-         sudo apt install microsoft-edge-stable
      - uses: actions/checkout@v3
      - name: Set up JDK 11
        uses: actions/setup-java@v3
