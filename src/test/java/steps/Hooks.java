@@ -36,7 +36,7 @@ public class Hooks {
 
     WebDriverManager.firefoxdriver().setup();
     FirefoxOptions options = new FirefoxOptions();
-    options.setHeadless(true);
+    options.setHeadless(false);
     driver = new FirefoxDriver(options);
 
     wait = new WebDriverWait(driver, 10);
