@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,22 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Test_Suite">
-              <span class="suite-name border-passed">Test Suite</span>
+            <a href="#" panel-name="suite-Multi_Browser_Test" class="navigator-link">
+              <span class="suite-name border-failed">Multi Browser Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Test_Suite">
-                    <span>C:\FrameworkYY\Galicia\branches\FrameworkYY\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Multi_Browser_Test" class="navigator-link ">
+                    <span>C:\Users\yailin.valdivia\OneDrive - Globant\FrameworkYY\FrameworkYY\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Test_Suite">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Multi_Browser_Test" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Test_Suite">
+                  <a href="#" panel-name="group-Multi_Browser_Test" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Test_Suite">
+                  <a href="#" panel-name="times-Multi_Browser_Test" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Test_Suite">
+                  <a href="#" panel-name="reporter-Multi_Browser_Test" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_Suite">
+                  <a href="#" panel-name="ignored-methods-Multi_Browser_Test" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Test_Suite">
+                  <a href="#" panel-name="chronological-Multi_Browser_Test" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,46 +93,115 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">18 methods, 1 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Multi_Browser_Test" class="hide-methods failed suite-Multi_Browser_Test"> (hide)</a> <!-- hide-methods failed suite-Multi_Browser_Test -->
+                      <a href="#" panel-name="suite-Multi_Browser_Test" class="show-methods failed suite-Multi_Browser_Test"> (show)</a> <!-- show-methods failed suite-Multi_Browser_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Multi_Browser_Test">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login Successful&quot;, &quot;Login y Logout&quot;)">runScenario("Login Successful", "Login y Logout")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Multi_Browser_Test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods passed suite-Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Test_Suite -->
-                      <a href="#" panel-name="suite-Test_Suite" class="show-methods passed suite-Test_Suite"> (show)</a> <!-- show-methods passed suite-Test_Suite -->
+                      <a href="#" panel-name="suite-Multi_Browser_Test" class="hide-methods passed suite-Multi_Browser_Test"> (hide)</a> <!-- hide-methods passed suite-Multi_Browser_Test -->
+                      <a href="#" panel-name="suite-Multi_Browser_Test" class="show-methods passed suite-Multi_Browser_Test"> (show)</a> <!-- show-methods passed suite-Multi_Browser_Test -->
                     </span>
-                    <div class="method-list-content passed suite-Test_Suite">
+                    <div class="method-list-content passed suite-Multi_Browser_Test">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Register a user Successful&quot;, &quot;Register a user&quot;)">runScenario("Register a user Successful", "Register a user")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;To add a laptop to the shopping cart&quot;, &quot;By Articles&quot;)">runScenario("To add a laptop to the shopping cart", "By Articles")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Find Pet by id&quot;, &quot;Manage pet API services&quot;)">runScenario("Find Pet by id", "Manage pet API services")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register a user Successful&quot;, &quot;Register a user&quot;)">runScenario("Register a user Successful", "Register a user")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Add Pet&quot;, &quot;Manage pet API services&quot;)">runScenario("Add Pet", "Manage pet API services")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add Pet&quot;, &quot;Manage pet API services&quot;)">runScenario("Add Pet", "Manage pet API services")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;To add a laptop to the shopping cart&quot;, &quot;By Articles&quot;)">runScenario("To add a laptop to the shopping cart", "By Articles")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update an existing pet&quot;, &quot;Manage pet API services&quot;)">runScenario("Update an existing pet", "Manage pet API services")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Login Successful&quot;, &quot;Login y Logout&quot;)">runScenario("Login Successful", "Login y Logout")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Find Pet by id&quot;, &quot;Manage pet API services&quot;)">runScenario("Find Pet by id", "Manage pet API services")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Update an existing pet&quot;, &quot;Manage pet API services&quot;)">runScenario("Update an existing pet", "Manage pet API services")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add Pet&quot;, &quot;Manage pet API services&quot;)">runScenario("Add Pet", "Manage pet API services")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Test_Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Find Pet by id&quot;, &quot;Manage pet API services&quot;)">runScenario("Find Pet by id", "Manage pet API services")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register a user Successful&quot;, &quot;Register a user&quot;)">runScenario("Register a user Successful", "Register a user")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update an existing pet&quot;, &quot;Manage pet API services&quot;)">runScenario("Update an existing pet", "Manage pet API services")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login Successful&quot;, &quot;Login y Logout&quot;)">runScenario("Login Successful", "Login y Logout")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;To add a laptop to the shopping cart&quot;, &quot;By Articles&quot;)">runScenario("To add a laptop to the shopping cart", "By Articles")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;To add a laptop to the shopping cart&quot;, &quot;By Articles&quot;)">runScenario("To add a laptop to the shopping cart", "By Articles")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update an existing pet&quot;, &quot;Manage pet API services&quot;)">runScenario("Update an existing pet", "Manage pet API services")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Find Pet by id&quot;, &quot;Manage pet API services&quot;)">runScenario("Find Pet by id", "Manage pet API services")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add Pet&quot;, &quot;Manage pet API services&quot;)">runScenario("Add Pet", "Manage pet API services")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login Successful&quot;, &quot;Login y Logout&quot;)">runScenario("Login Successful", "Login y Logout")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multi_Browser_Test" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register a user Successful&quot;, &quot;Register a user&quot;)">runScenario("Register a user Successful", "Register a user")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Multi_Browser_Test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -141,8 +212,49 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Test_Suite" class="panel Test_Suite">
-          <div class="suite-Test_Suite-class-passed">
+        <div panel-name="suite-Multi_Browser_Test" class="panel Multi_Browser_Test">
+          <div class="suite-Multi_Browser_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login Successful&quot;, &quot;Login y Logout&quot;)">
+                  </a> <!-- runScenario("Login Successful", "Login y Logout") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login Successful", "Login y Logout")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;a id=&quot;login2&quot; class=&quot;nav-link&quot; href=&quot;#&quot;&gt; is not clickable at point (1010,37) because another element &lt;div id=&quot;signInModal&quot; class=&quot;modal fade&quot;&gt; obscures it
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;DESKTOP-LI580ST&apos;, ip: &apos;10.121.5.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c926495e-386b-4524-9aad-0edf3f20b2b5, clickElement {id=1c9ae915-09b9-4f6b-b129-828cea178d46}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:56911, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16076, moz:profile: C:\Users\YAILIN~1.VAL\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:56911/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (c926495e-386b-4524-9aad-0edf3f20b2b5)] -&gt; id: login2]
+Session ID: c926495e-386b-4524-9aad-0edf3f20b2b5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.BasePage.clickElement(BasePage.java:72)
+	at pages.RegisterUserPage.clickOnButton(RegisterUserPage.java:53)
+	at steps.RegisterUserSteps.clickOnButton(RegisterUserSteps.java:20)
+	at ✽.Click on the button Log in(classpath:features/web/Login.feature:14)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Multi_Browser_Test-class-failed -->
+          <div class="suite-Multi_Browser_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">runner.TestRunner</span>
@@ -150,10 +262,40 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;To add a laptop to the shopping cart&quot;, &quot;By Articles&quot;)">
+                  </a> <!-- runScenario("To add a laptop to the shopping cart", "By Articles") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To add a laptop to the shopping cart", "By Articles")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Register a user Successful&quot;, &quot;Register a user&quot;)">
                   </a> <!-- runScenario("Register a user Successful", "Register a user") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Register a user Successful", "Register a user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add Pet&quot;, &quot;Manage pet API services&quot;)">
+                  </a> <!-- runScenario("Add Pet", "Manage pet API services") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add Pet", "Manage pet API services")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Update an existing pet&quot;, &quot;Manage pet API services&quot;)">
+                  </a> <!-- runScenario("Update an existing pet", "Manage pet API services") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Update an existing pet", "Manage pet API services")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -180,10 +322,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;To add a laptop to the shopping cart&quot;, &quot;By Articles&quot;)">
-                  </a> <!-- runScenario("To add a laptop to the shopping cart", "By Articles") -->
+                  <a name="runScenario(&quot;Find Pet by id&quot;, &quot;Manage pet API services&quot;)">
+                  </a> <!-- runScenario("Find Pet by id", "Manage pet API services") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("To add a laptop to the shopping cart", "By Articles")</span>
+                  <span class="parameters">("Find Pet by id", "Manage pet API services")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register a user Successful&quot;, &quot;Register a user&quot;)">
+                  </a> <!-- runScenario("Register a user Successful", "Register a user") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register a user Successful", "Register a user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Update an existing pet&quot;, &quot;Manage pet API services&quot;)">
+                  </a> <!-- runScenario("Update an existing pet", "Manage pet API services") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Update an existing pet", "Manage pet API services")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -200,6 +362,26 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;To add a laptop to the shopping cart&quot;, &quot;By Articles&quot;)">
+                  </a> <!-- runScenario("To add a laptop to the shopping cart", "By Articles") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To add a laptop to the shopping cart", "By Articles")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To add a laptop to the shopping cart&quot;, &quot;By Articles&quot;)">
+                  </a> <!-- runScenario("To add a laptop to the shopping cart", "By Articles") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To add a laptop to the shopping cart", "By Articles")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Update an existing pet&quot;, &quot;Manage pet API services&quot;)">
                   </a> <!-- runScenario("Update an existing pet", "Manage pet API services") -->
                   <span class="method-name">runScenario</span>
@@ -208,42 +390,101 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Find Pet by id&quot;, &quot;Manage pet API services&quot;)">
+                  </a> <!-- runScenario("Find Pet by id", "Manage pet API services") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Find Pet by id", "Manage pet API services")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add Pet&quot;, &quot;Manage pet API services&quot;)">
+                  </a> <!-- runScenario("Add Pet", "Manage pet API services") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add Pet", "Manage pet API services")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login Successful&quot;, &quot;Login y Logout&quot;)">
+                  </a> <!-- runScenario("Login Successful", "Login y Logout") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login Successful", "Login y Logout")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register a user Successful&quot;, &quot;Register a user&quot;)">
+                  </a> <!-- runScenario("Register a user Successful", "Register a user") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register a user Successful", "Register a user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-passed -->
-        </div> <!-- panel Test_Suite -->
-        <div panel-name="test-xml-Test_Suite" class="panel">
+          </div> <!-- suite-Multi_Browser_Test-class-passed -->
+        </div> <!-- panel Multi_Browser_Test -->
+        <div panel-name="test-xml-Multi_Browser_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\FrameworkYY\Galicia\branches\FrameworkYY\testng.xml</span>
+            <span class="header-content">C:\Users\yailin.valdivia\OneDrive - Globant\FrameworkYY\FrameworkYY\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Regression Test&quot;&gt;
+&lt;suite name=&quot;Multi Browser Test&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Firefox Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;runner.TestRunner&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Regression Test --&gt;
-&lt;/suite&gt; &lt;!-- Test Suite --&gt;
+  &lt;/test&gt; &lt;!-- Firefox Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Chrome Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runner.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Edge&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runner.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Edge --&gt;
+&lt;/suite&gt; &lt;!-- Multi Browser Test --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Test_Suite" class="panel">
+        <div panel-name="testlist-Multi_Browser_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Test Suite</span>
+            <span class="header-content">Tests for Multi Browser Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regression Test (1 class)</span>
+                <span class="test-name">Firefox Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Chrome Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Edge (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Test_Suite" class="panel">
+        <div panel-name="group-Multi_Browser_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Test Suite</span>
+            <span class="header-content">Groups for Multi Browser Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -256,111 +497,238 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Test_Suite" class="panel">
+        <div panel-name="times-Multi_Browser_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Test Suite</span>
+            <span class="header-content">Times for Multi Browser Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Test_Suite');
-function tableData_Test_Suite() {
+suiteTableInitFunctions.push('tableData_Multi_Browser_Test');
+function tableData_Multi_Browser_Test() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestRunner')
-data.setCell(0, 3, 22570);
+data.setCell(0, 3, 16664);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.TestRunner')
-data.setCell(1, 3, 20059);
+data.setCell(1, 3, 14638);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runner.TestRunner')
-data.setCell(2, 3, 17159);
+data.setCell(2, 3, 12166);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runner.TestRunner')
-data.setCell(3, 3, 12999);
+data.setCell(3, 3, 11263);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'runner.TestRunner')
-data.setCell(4, 3, 8725);
+data.setCell(4, 3, 9852);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'runner.TestRunner')
-data.setCell(5, 3, 8221);
-window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
+data.setCell(5, 3, 8772);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runner.TestRunner')
+data.setCell(6, 3, 8411);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runner.TestRunner')
+data.setCell(7, 3, 8220);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runner.TestRunner')
+data.setCell(8, 3, 6909);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runner.TestRunner')
+data.setCell(9, 3, 6835);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runner.TestRunner')
+data.setCell(10, 3, 6452);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runner.TestRunner')
+data.setCell(11, 3, 5931);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runner.TestRunner')
+data.setCell(12, 3, 4747);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runner.TestRunner')
+data.setCell(13, 3, 4398);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runner.TestRunner')
+data.setCell(14, 3, 4265);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runner.TestRunner')
+data.setCell(15, 3, 4166);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runner.TestRunner')
+data.setCell(16, 3, 3876);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runner.TestRunner')
+data.setCell(17, 3, 3132);
+window.suiteTableData['Multi_Browser_Test']= { tableData: data, tableDiv: 'times-div-Multi_Browser_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Test_Suite">
-              </div> <!-- times-div-Test_Suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Multi_Browser_Test">
+              </div> <!-- times-div-Multi_Browser_Test -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Test_Suite" class="panel">
+        <div panel-name="reporter-Multi_Browser_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Test Suite</span>
+            <span class="header-content">Reporter output for Multi Browser Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Test_Suite" class="panel">
+        <div panel-name="ignored-methods-Multi_Browser_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Test_Suite" class="panel">
+        <div panel-name="chronological-Multi_Browser_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass</span>
+              <div class="configuration-test before">
+                <span class="method-name">defineBrowser(firefox)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@40903af6)</span>
+                <span class="method-start">75 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Add Pet", "Manage pet API services")</span>
-                <span class="method-start">334 ms</span>
+                <span class="method-start">575 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Find Pet by id", "Manage pet API services")</span>
-                <span class="method-start">20396 ms</span>
+                <span class="method-start">17376 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Update an existing pet", "Manage pet API services")</span>
-                <span class="method-start">28618 ms</span>
+                <span class="method-start">24289 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("To add a laptop to the shopping cart", "By Articles")</span>
-                <span class="method-start">37344 ms</span>
+                <span class="method-start">31127 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Login Successful", "Login y Logout")</span>
-                <span class="method-start">59915 ms</span>
+                <span class="method-start">45768 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Register a user Successful", "Register a user")</span>
-                <span class="method-start">77075 ms</span>
+                <span class="method-start">54003 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">90075 ms</span>
+                <span class="method-start">62420 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test before">
+                <span class="method-name">defineBrowser(chrome)</span>
+                <span class="method-start">62480 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@686ae84f)</span>
+                <span class="method-start">62481 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add Pet", "Manage pet API services")</span>
+                <span class="method-start">62510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Find Pet by id", "Manage pet API services")</span>
+                <span class="method-start">67261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Update an existing pet", "Manage pet API services")</span>
+                <span class="method-start">71662 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To add a laptop to the shopping cart", "By Articles")</span>
+                <span class="method-start">75836 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login Successful", "Login y Logout")</span>
+                <span class="method-start">87101 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register a user Successful", "Register a user")</span>
+                <span class="method-start">95875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">101809 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test before">
+                <span class="method-name">defineBrowser(edge)</span>
+                <span class="method-start">101821 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@70b95f05)</span>
+                <span class="method-start">101822 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add Pet", "Manage pet API services")</span>
+                <span class="method-start">101843 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Find Pet by id", "Manage pet API services")</span>
+                <span class="method-start">104978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Update an existing pet", "Manage pet API services")</span>
+                <span class="method-start">108857 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To add a laptop to the shopping cart", "By Articles")</span>
+                <span class="method-start">113125 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login Successful", "Login y Logout")</span>
+                <span class="method-start">125297 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register a user Successful", "Register a user")</span>
+                <span class="method-start">135151 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">141606 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
