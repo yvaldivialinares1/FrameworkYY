@@ -23,9 +23,12 @@ jobs:
      - name: Install Chrome Browser
        run: chrome --version
        
-     - uses: browser-actions/setup-edge@latest
      - name: Install Edge Browser
-       run: edge --version
+       run: |
+          wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft.gpg
+          sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge.list'
+          sudo apt update
+          sudo apt install microsoft-edge-stable
 
      - uses: actions/checkout@v3
      - name: Set up JDK 11
